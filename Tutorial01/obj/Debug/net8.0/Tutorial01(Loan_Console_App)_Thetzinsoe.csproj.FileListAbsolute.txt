@@ -1,0 +1,14 @@
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\bin\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.exe
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\bin\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.deps.json
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\bin\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.runtimeconfig.json
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\bin\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.dll
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\bin\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.pdb
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.GeneratedMSBuildEditorConfig.editorconfig
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.AssemblyInfoInputs.cache
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.AssemblyInfo.cs
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.csproj.CoreCompileInputs.cache
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.dll
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\refint\Tutorial01(Loan_Console_App)_Thetzinsoe.dll
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.pdb
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\Tutorial01(Loan_Console_App)_Thetzinsoe.genruntimeconfig.cache
+E:\Csharp-Tuto\Tutorial01(Loan_Console_App)_Thetzinsoe\obj\Debug\net8.0\ref\Tutorial01(Loan_Console_App)_Thetzinsoe.dll
