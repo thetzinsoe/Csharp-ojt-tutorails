@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tutorial02(Loan_Window_Form_App)_Thetzinsoe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b58128a86b4221b4548170db398a0ae8671d366")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tutorial02(Loan_Window_Form_App)_Thetzinsoe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tutorial02(Loan_Window_Form_App)_Thetzinsoe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Csharp-Tuto\\Tutorial02(Loan_Window_Form_App)_Thetzinsoe\\",
+  "WorkspaceRootPath": "E:\\Csharp-ojt-tutorails\\Tutorial02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1777F644-DDAF-41C6-9958-1608D28D0C09}|Tutorial02(Loan_Window_Form_App)_Thetzinsoe.csproj|e:\\csharp-tuto\\tutorial02(loan_window_form_app)_thetzinsoe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1777F644-DDAF-41C6-9958-1608D28D0C09}|Tutorial02(Loan_Window_Form_App)_Thetzinsoe.csproj|e:\\csharp-ojt-tutorails\\tutorial02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1777F644-DDAF-41C6-9958-1608D28D0C09}|Tutorial02(Loan_Window_Form_App)_Thetzinsoe.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1777F644-DDAF-41C6-9958-1608D28D0C09}|Tutorial02(Loan_Window_Form_App)_Thetzinsoe.csproj|E:\\Csharp-Tuto\\Tutorial02(Loan_Window_Form_App)_Thetzinsoe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1777F644-DDAF-41C6-9958-1608D28D0C09}|Tutorial02(Loan_Window_Form_App)_Thetzinsoe.csproj|E:\\Csharp-ojt-tutorails\\Tutorial02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1777F644-DDAF-41C6-9958-1608D28D0C09}|Tutorial02(Loan_Window_Form_App)_Thetzinsoe.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\Csharp-Tuto\\Tutorial02(Loan_Window_Form_App)_Thetzinsoe\\Form1.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial02\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\Csharp-Tuto\\Tutorial02(Loan_Window_Form_App)_Thetzinsoe\\Form1.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial02\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T03:32:41.488Z",
               "EditorCaption": ""
@@ -45,12 +45,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\Csharp-Tuto\\Tutorial02(Loan_Window_Form_App)_Thetzinsoe\\Form1.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial02\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\Csharp-Tuto\\Tutorial02(Loan_Window_Form_App)_Thetzinsoe\\Form1.cs [Design]",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial02\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T02:47:12.108Z"
+              "WhenOpened": "2024-03-11T02:47:12.108Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

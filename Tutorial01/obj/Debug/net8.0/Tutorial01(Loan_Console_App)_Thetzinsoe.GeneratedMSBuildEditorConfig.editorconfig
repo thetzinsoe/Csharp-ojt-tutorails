@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tutorial01_Loan_Console_App__Thetzinsoe
-build_property.ProjectDir = E:\Csharp-ojt-tutorails\Tutorial01(Loan_Console_App)_Thetzinsoe\
+build_property.ProjectDir = E:\Csharp-ojt-tutorails\Tutorial01\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
