@@ -10,14 +10,14 @@
         "projectUniqueName": "E:\\Csharp-ojt-tutorails\\Tutorial02\\Tutorial02(Loan_Window_Form_App)_Thetzinsoe.csproj",
         "projectName": "Tutorial02(Loan_Window_Form_App)_Thetzinsoe",
         "projectPath": "E:\\Csharp-ojt-tutorails\\Tutorial02\\Tutorial02(Loan_Window_Form_App)_Thetzinsoe.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\thetzinsoe\\.nuget\\packages\\",
         "outputPath": "E:\\Csharp-ojt-tutorails\\Tutorial02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thetzinsoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

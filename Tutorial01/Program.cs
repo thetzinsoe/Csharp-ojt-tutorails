@@ -8,7 +8,7 @@ class Program
         decimal loanAmount = GetValidNumber("Loan Amount");
         decimal interestRate = GetValidInterestRate();
         decimal duration = GetValidLoanDuration();
-        decimal result = Convert.ToDecimal(string.Format("{0:0.00}", (loanAmount * interestRate / 100) * (duration / 12)));
+        decimal result = Convert.ToDecimal(string.Format("{0:0.00}", (loanAmount * interestRate / 100) * duration));
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Interest Amount : " + result);
         Console.WriteLine("Total Amount : " + (result + loanAmount));
