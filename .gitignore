@@ -1,0 +1,72 @@
+# OS-generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# Editor-specific files #
+#########################
+.vscode/
+*.code-workspace
+
+# Dependency directories #
+##########################
+/node_modules/
+/bower_components/
+
+# Build output directories #
+###########################
+/dist/
+/build/
+/out/
+
+# Compiled files #
+#################
+*.log
+*.pyc
+*.class
+*.dll
+*.exe
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+
+# Package files #
+#################
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Temporary files #
+###################
+*.tmp
+*.swp
+
+# Environment files #
+#####################
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# IDE-specific files #
+######################
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs
+*.log.*
