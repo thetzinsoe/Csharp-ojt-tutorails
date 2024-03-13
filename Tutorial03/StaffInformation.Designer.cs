@@ -82,7 +82,7 @@
             // txtStaffNo
             // 
             txtStaffNo.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtStaffNo.Location = new Point(232, 79);
+            txtStaffNo.Location = new Point(232, 75);
             txtStaffNo.Name = "txtStaffNo";
             txtStaffNo.ReadOnly = true;
             txtStaffNo.Size = new Size(223, 26);
@@ -102,7 +102,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(125, 87);
+            label2.Location = new Point(125, 83);
             label2.Name = "label2";
             label2.Size = new Size(69, 18);
             label2.TabIndex = 2;
@@ -112,7 +112,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(125, 146);
+            label3.Location = new Point(125, 139);
             label3.Name = "label3";
             label3.Size = new Size(87, 18);
             label3.TabIndex = 4;
@@ -121,7 +121,7 @@
             // txtStaffName
             // 
             txtStaffName.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtStaffName.Location = new Point(232, 138);
+            txtStaffName.Location = new Point(232, 131);
             txtStaffName.Name = "txtStaffName";
             txtStaffName.Size = new Size(223, 26);
             txtStaffName.TabIndex = 3;
@@ -130,7 +130,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(125, 208);
+            label4.Location = new Point(125, 198);
             label4.Name = "label4";
             label4.Size = new Size(80, 18);
             label4.TabIndex = 6;
@@ -140,7 +140,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(125, 263);
+            label5.Location = new Point(125, 250);
             label5.Name = "label5";
             label5.Size = new Size(98, 18);
             label5.TabIndex = 8;
@@ -149,7 +149,7 @@
             // txtAge
             // 
             txtAge.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAge.Location = new Point(231, 309);
+            txtAge.Location = new Point(231, 294);
             txtAge.Name = "txtAge";
             txtAge.ReadOnly = true;
             txtAge.Size = new Size(223, 26);
@@ -159,7 +159,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(125, 309);
+            label6.Location = new Point(125, 294);
             label6.Name = "label6";
             label6.Size = new Size(35, 18);
             label6.TabIndex = 10;
@@ -168,7 +168,7 @@
             // txtNrcNo
             // 
             txtNrcNo.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNrcNo.Location = new Point(231, 419);
+            txtNrcNo.Location = new Point(231, 398);
             txtNrcNo.Name = "txtNrcNo";
             txtNrcNo.Size = new Size(223, 26);
             txtNrcNo.TabIndex = 9;
@@ -177,7 +177,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(125, 364);
+            label7.Location = new Point(125, 346);
             label7.Name = "label7";
             label7.Size = new Size(82, 18);
             label7.TabIndex = 12;
@@ -186,7 +186,7 @@
             // txtPhoneNo1
             // 
             txtPhoneNo1.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPhoneNo1.Location = new Point(622, 133);
+            txtPhoneNo1.Location = new Point(622, 126);
             txtPhoneNo1.Name = "txtPhoneNo1";
             txtPhoneNo1.Size = new Size(223, 26);
             txtPhoneNo1.TabIndex = 11;
@@ -195,7 +195,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(125, 419);
+            label8.Location = new Point(125, 398);
             label8.Name = "label8";
             label8.Size = new Size(65, 18);
             label8.TabIndex = 13;
@@ -206,7 +206,7 @@
             cbStaffType.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbStaffType.FormattingEnabled = true;
             cbStaffType.Items.AddRange(new object[] { "Full Time", "Part Time" });
-            cbStaffType.Location = new Point(232, 361);
+            cbStaffType.Location = new Point(232, 343);
             cbStaffType.Name = "cbStaffType";
             cbStaffType.Size = new Size(222, 26);
             cbStaffType.TabIndex = 14;
@@ -215,7 +215,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(515, 141);
+            label9.Location = new Point(515, 134);
             label9.Name = "label9";
             label9.Size = new Size(76, 18);
             label9.TabIndex = 16;
@@ -224,7 +224,7 @@
             // txtPhoneNo2
             // 
             txtPhoneNo2.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPhoneNo2.Location = new Point(622, 200);
+            txtPhoneNo2.Location = new Point(622, 190);
             txtPhoneNo2.Name = "txtPhoneNo2";
             txtPhoneNo2.Size = new Size(223, 26);
             txtPhoneNo2.TabIndex = 15;
@@ -233,21 +233,21 @@
             // 
             label10.Location = new Point(0, 0);
             label10.Name = "label10";
-            label10.Size = new Size(100, 24);
+            label10.Size = new Size(100, 23);
             label10.TabIndex = 27;
             // 
             // label11
             // 
             label11.Location = new Point(0, 0);
             label11.Name = "label11";
-            label11.Size = new Size(100, 24);
+            label11.Size = new Size(100, 23);
             label11.TabIndex = 26;
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.Location = new Point(515, 263);
+            label12.Location = new Point(515, 250);
             label12.Name = "label12";
             label12.Size = new Size(53, 18);
             label12.TabIndex = 22;
@@ -257,7 +257,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(510, 361);
+            label13.Location = new Point(510, 343);
             label13.Name = "label13";
             label13.Size = new Size(66, 18);
             label13.TabIndex = 24;
@@ -265,37 +265,36 @@
             // 
             // rtxtAddress
             // 
-            rtxtAddress.Location = new Point(622, 364);
+            rtxtAddress.Location = new Point(622, 346);
             rtxtAddress.Name = "rtxtAddress";
-            rtxtAddress.Size = new Size(278, 102);
+            rtxtAddress.Size = new Size(278, 97);
             rtxtAddress.TabIndex = 25;
             rtxtAddress.Text = "";
             // 
             // pbStaffPhoto
             // 
             pbStaffPhoto.BorderStyle = BorderStyle.FixedSingle;
-            pbStaffPhoto.Location = new Point(622, 261);
+            pbStaffPhoto.Location = new Point(622, 248);
             pbStaffPhoto.Name = "pbStaffPhoto";
-            pbStaffPhoto.Size = new Size(80, 85);
+            pbStaffPhoto.Size = new Size(80, 81);
             pbStaffPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
             pbStaffPhoto.TabIndex = 28;
             pbStaffPhoto.TabStop = false;
             // 
             // dJoinDate
             // 
-            dJoinDate.Location = new Point(231, 208);
+            dJoinDate.Location = new Point(231, 198);
             dJoinDate.MinDate = new DateTime(1920, 1, 1, 0, 0, 0, 0);
             dJoinDate.Name = "dJoinDate";
-            dJoinDate.Size = new Size(224, 27);
+            dJoinDate.Size = new Size(224, 26);
             dJoinDate.TabIndex = 29;
             dJoinDate.ValueChanged += dJoinDate_ValueChanged;
-            dJoinDate.Validating += djoinDate_Validate;
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(515, 203);
+            label14.Location = new Point(515, 193);
             label14.Name = "label14";
             label14.Size = new Size(76, 18);
             label14.TabIndex = 30;
@@ -305,7 +304,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.Location = new Point(515, 82);
+            label15.Location = new Point(515, 78);
             label15.Name = "label15";
             label15.Size = new Size(61, 18);
             label15.TabIndex = 31;
@@ -314,9 +313,9 @@
             // rdOther
             // 
             rdOther.AutoSize = true;
-            rdOther.Location = new Point(622, 85);
+            rdOther.Location = new Point(622, 81);
             rdOther.Name = "rdOther";
-            rdOther.Size = new Size(64, 24);
+            rdOther.Size = new Size(63, 23);
             rdOther.TabIndex = 32;
             rdOther.TabStop = true;
             rdOther.Text = "Other";
@@ -325,9 +324,9 @@
             // rdMale
             // 
             rdMale.AutoSize = true;
-            rdMale.Location = new Point(724, 85);
+            rdMale.Location = new Point(724, 81);
             rdMale.Name = "rdMale";
-            rdMale.Size = new Size(60, 24);
+            rdMale.Size = new Size(57, 23);
             rdMale.TabIndex = 33;
             rdMale.TabStop = true;
             rdMale.Text = "Male";
@@ -336,9 +335,9 @@
             // rdfemale
             // 
             rdfemale.AutoSize = true;
-            rdfemale.Location = new Point(830, 85);
+            rdfemale.Location = new Point(830, 81);
             rdfemale.Name = "rdfemale";
-            rdfemale.Size = new Size(75, 24);
+            rdfemale.Size = new Size(70, 23);
             rdfemale.TabIndex = 34;
             rdfemale.TabStop = true;
             rdfemale.Text = "Female";
@@ -346,19 +345,18 @@
             // 
             // dBirthDate
             // 
-            dBirthDate.Location = new Point(232, 263);
+            dBirthDate.Location = new Point(232, 250);
             dBirthDate.MinDate = new DateTime(1920, 1, 1, 0, 0, 0, 0);
             dBirthDate.Name = "dBirthDate";
-            dBirthDate.Size = new Size(224, 27);
+            dBirthDate.Size = new Size(224, 26);
             dBirthDate.TabIndex = 35;
             dBirthDate.ValueChanged += dBirthDate_ValueChanged;
-            dBirthDate.Validating += birthDate_Validation;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(301, 491);
+            btnAdd.Location = new Point(301, 466);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(120, 36);
+            btnAdd.Size = new Size(120, 34);
             btnAdd.TabIndex = 36;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
@@ -366,9 +364,9 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(457, 491);
+            btnClear.Location = new Point(457, 466);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(120, 36);
+            btnClear.Size = new Size(120, 34);
             btnClear.TabIndex = 37;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
@@ -376,22 +374,26 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(612, 491);
+            btnDelete.Location = new Point(612, 466);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(120, 36);
+            btnDelete.Size = new Size(120, 34);
             btnDelete.TabIndex = 38;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // lvStaffInfo
             // 
             lvStaffInfo.Columns.AddRange(new ColumnHeader[] { lvStaffNo, lvImage, lvStaffName, lvJoinForm, lvStaffType, lvNrcNo, lvGender, lvAge, lvPhoneNo, lvPhoneNo2, lvAddress });
-            lvStaffInfo.Location = new Point(37, 559);
+            lvStaffInfo.FullRowSelect = true;
+            lvStaffInfo.Location = new Point(37, 531);
+            lvStaffInfo.MultiSelect = false;
             lvStaffInfo.Name = "lvStaffInfo";
-            lvStaffInfo.Size = new Size(929, 199);
+            lvStaffInfo.Size = new Size(929, 189);
             lvStaffInfo.TabIndex = 39;
             lvStaffInfo.UseCompatibleStateImageBehavior = false;
             lvStaffInfo.View = View.Details;
+            lvStaffInfo.SelectedIndexChanged += lvStaffInfo_SelectedIndexChanged;
             // 
             // lvStaffNo
             // 
@@ -448,9 +450,9 @@
             // 
             // btnChooseFile
             // 
-            btnChooseFile.Location = new Point(724, 261);
+            btnChooseFile.Location = new Point(724, 248);
             btnChooseFile.Name = "btnChooseFile";
-            btnChooseFile.Size = new Size(176, 36);
+            btnChooseFile.Size = new Size(176, 34);
             btnChooseFile.TabIndex = 40;
             btnChooseFile.Text = "Choose File";
             btnChooseFile.UseVisualStyleBackColor = true;
@@ -462,9 +464,9 @@
             // 
             // StaffInformation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1013, 749);
+            ClientSize = new Size(1030, 712);
             Controls.Add(btnChooseFile);
             Controls.Add(lvStaffInfo);
             Controls.Add(btnDelete);

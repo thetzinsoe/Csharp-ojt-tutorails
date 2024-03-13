@@ -1,23 +1,22 @@
+using System;
 using System.ComponentModel;
 using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace Tutorial03
 {
     public partial class StaffInformation : Form
     {
-
-        DataTable staffDataTable = new DataTable();
-
-        // Add columns to the DataTable for different staff attributes
-
+        private readonly DataTable staffDataTable = new DataTable();
 
         public StaffInformation()
         {
             InitializeComponent();
+
             dBirthDate.MaxDate = DateTime.Now;
             dBirthDate.Format = DateTimePickerFormat.Custom;
             dBirthDate.CustomFormat = "0 / 00 / 0000";
@@ -27,31 +26,18 @@ namespace Tutorial03
             dJoinDate.Format = DateTimePickerFormat.Custom;
             dJoinDate.CustomFormat = "0 / 00 / 0000";
 
-
-            staffDataTable.Columns.Add("StaffID", typeof(int)); // Assuming StaffID is an integer
-            staffDataTable.Columns["StaffID"].AutoIncrement = true;
+            staffDataTable.Columns.Add("StaffID", typeof(int)).AutoIncrement = true;
             staffDataTable.Columns["StaffID"].AutoIncrementSeed = 1;
-            staffDataTable.Columns.Add("Image", typeof(byte[])); // Column to store image as byte array
+            staffDataTable.Columns.Add("Image", typeof(byte[]));
             staffDataTable.Columns.Add("StaffName", typeof(string));
             staffDataTable.Columns.Add("Gender", typeof(string));
             staffDataTable.Columns.Add("JoinDate", typeof(DateTime));
             staffDataTable.Columns.Add("StaffType", typeof(string));
             staffDataTable.Columns.Add("NRCNo", typeof(string));
-            staffDataTable.Columns.Add("PhoneNumber1", typeof(string)); // Phone number 1
-            staffDataTable.Columns.Add("PhoneNumber2", typeof(string)); // Phone number 2
-            staffDataTable.Columns.Add("Address", typeof(string)); // Address
-            staffDataTable.Columns.Add("Age", typeof(int)); // Age
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            staffDataTable.Columns.Add("PhoneNumber1", typeof(string));
+            staffDataTable.Columns.Add("PhoneNumber2", typeof(string));
+            staffDataTable.Columns.Add("Address", typeof(string));
+            staffDataTable.Columns.Add("Age", typeof(int));
         }
 
         private void dBirthDate_ValueChanged(object sender, EventArgs e)
@@ -83,22 +69,18 @@ namespace Tutorial03
             }
         }
 
-        // Adding Staff
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //validation for staff name
             string alphaPattern = @"^[\p{L}\s]+$";
             if (!Regex.IsMatch(txtStaffName.Text, alphaPattern))
             {
-                errorProviderCommon.SetError(txtStaffName, "Invalid staff name .");
+                errorProviderCommon.SetError(txtStaffName, "Invalid staff name.");
             }
             else
             {
                 errorProviderCommon.SetError(txtStaffName, "");
             }
 
-
-            //validateion for Join date
             if (dJoinDate.Value == dJoinDate.MinDate)
             {
                 errorProviderCommon.SetError(dJoinDate, "Join Date cannot be empty.");
@@ -108,7 +90,6 @@ namespace Tutorial03
                 errorProviderCommon.SetError(dJoinDate, "");
             }
 
-            //validation for birthday
             if (dBirthDate.Value.Year == DateTime.Today.Year && dBirthDate.Value.Month == DateTime.Today.Month && dBirthDate.Value.Day == DateTime.Today.Day)
             {
                 errorProviderCommon.SetError(dBirthDate, "Birth Date cannot be empty.");
@@ -118,7 +99,6 @@ namespace Tutorial03
                 errorProviderCommon.SetError(dBirthDate, "");
             }
 
-            //validation for staff type
             if (cbStaffType.SelectedItem == null)
             {
                 errorProviderCommon.SetError(cbStaffType, "Staff type cannot be empty.");
@@ -128,9 +108,7 @@ namespace Tutorial03
                 errorProviderCommon.SetError(cbStaffType, "");
             }
 
-            //validation for NRC NO
             string nrcPattern = @"^\d+\/[a-zA-Z]+\([a-zA-Z]+\)\d{6}$";
-
             if (!Regex.IsMatch(txtNrcNo.Text, nrcPattern) || txtNrcNo.Text.Length <= 15)
             {
                 errorProviderCommon.SetError(txtNrcNo, "Invalid NRC NO format.");
@@ -140,26 +118,6 @@ namespace Tutorial03
                 errorProviderCommon.SetError(txtNrcNo, "");
             }
 
-            //getting gender
-            string gender = "";
-            if (rdMale.Checked)
-            {
-                gender = rdMale.Text;
-            }
-            else if (rdfemale.Checked)
-            {
-                gender = rdfemale.Text;
-            }
-            else if (rdOther.Checked)
-            {
-                gender = rdOther.Text;
-            }
-            else
-            {
-                gender = "";
-            }
-
-            //validation for phone number
             string numericPattern = @"^\d+$";
             if (Regex.IsMatch(txtPhoneNo1.Text, numericPattern) && txtPhoneNo1.Text.Length >= 5)
             {
@@ -168,48 +126,65 @@ namespace Tutorial03
             else
             {
                 errorProviderCommon.SetError(txtPhoneNo1, "Invalid phone number format. Please enter a numeric value.");
-
             }
 
-            // Check if any error is present
             bool errorsPresent = errorProviderCommon.ContainerControl.Controls
                 .OfType<Control>()
                 .Any(control => !string.IsNullOrEmpty(errorProviderCommon.GetError(control)));
 
             if (!errorsPresent)
             {
-                byte[] imageData;
-                if (pbStaffPhoto.Image != null)
+                if (lvStaffInfo.SelectedItems.Count > 0)
                 {
-                    imageData = ImageToByteArray(pbStaffPhoto.Image);
+                    lvStaffInfo.SelectedItems[0].SubItems[0].Text = txtStaffNo.Text;
+                    lvStaffInfo.SelectedItems[0].SubItems[5].Text = txtNrcNo.Text;
+                    lvStaffInfo.SelectedItems[0].SubItems[2].Text = txtStaffName.Text;
+                    //if (DateTime.TryParse(lvStaffInfo.SelectedItems[0].SubItems[3].Text, out DateTime joinDate))
+                    //{
+                    //    dJoinDate.Value = joinDate;
+                    //}
+                    //else
+                    //{
+                    //    dJoinDate.Value = DateTime.Today;
+                    //}
+                    lvStaffInfo.SelectedItems[0].SubItems[4].Text = cbStaffType.Text;
+                    lvStaffInfo.SelectedItems[0].SubItems[6].Text = GetGender();
+                    lvStaffInfo.SelectedItems[0].SubItems[8].Text = txtPhoneNo1.Text;
+                    lvStaffInfo.SelectedItems[0].SubItems[9].Text = txtPhoneNo2.Text;
+                    lvStaffInfo.SelectedItems[0].SubItems[10].Text = rtxtAddress.Text;
+                    clear();
                 }
                 else
                 {
-                    imageData = new byte[0];
+                    byte[] imageData = pbStaffPhoto.Image != null ? ImageToByteArray(pbStaffPhoto.Image) : new byte[0];
+
+                    DataRow newRow = staffDataTable.NewRow();
+                    newRow["Image"] = imageData;
+                    newRow["StaffName"] = txtStaffName.Text;
+                    newRow["Gender"] = GetGender();
+                    newRow["Age"] = txtAge.Text;
+                    newRow["JoinDate"] = dJoinDate.Value.Date;
+                    newRow["StaffType"] = cbStaffType.SelectedItem.ToString();
+                    newRow["NRCNo"] = txtNrcNo.Text;
+                    newRow["PhoneNumber1"] = txtPhoneNo1.Text;
+                    newRow["PhoneNumber2"] = txtPhoneNo2.Text;
+                    newRow["Address"] = rtxtAddress.Text;
+
+                    staffDataTable.Rows.Add(newRow);
+                    MessageBox.Show("Adding staff successful");
+                    PopulateListViewWithDataTable();
+                    clear();
                 }
-
-                // Add data to staffDataTable
-                DataRow newRow = staffDataTable.NewRow();
-                newRow["Image"] = imageData; // Store image as bytes
-                newRow["StaffName"] = txtStaffName.Text;
-                newRow["Gender"] = gender;
-                newRow["Age"] = txtAge.Text;
-                newRow["JoinDate"] = dJoinDate.Value.Date;
-                newRow["StaffType"] = cbStaffType.SelectedItem.ToString();
-                newRow["NRCNo"] = txtNrcNo.Text;
-                newRow["PhoneNumber1"] = txtPhoneNo1.Text;
-                newRow["PhoneNumber2"] = txtPhoneNo2.Text;
-                newRow["Address"] = rtxtAddress.Text;
-
-                staffDataTable.Rows.Add(newRow);
-                MessageBox.Show("Adding staff successful");
-
-                PopulateListViewWithDataTable();
             }
             else
             {
                 MessageBox.Show("Error still present");
             }
+        }
+
+        private string GetGender()
+        {
+            return rdMale.Checked ? "Male" : (rdfemale.Checked ? "Female" : (rdOther.Checked ? "Other" : ""));
         }
 
         private byte[] ImageToByteArray(Image image)
@@ -228,8 +203,7 @@ namespace Tutorial03
             {
                 ListViewItem item = new ListViewItem();
                 item.Text = row["StaffID"].ToString();
-                // Add other columns as needed
-                item.SubItems.Add("Image"); // Placeholder for image
+                item.SubItems.Add("Image");
                 item.SubItems.Add(row["StaffName"].ToString());
                 item.SubItems.Add(row["JoinDate"].ToString());
                 item.SubItems.Add(row["StaffType"].ToString());
@@ -242,12 +216,6 @@ namespace Tutorial03
                 lvStaffInfo.Items.Add(item);
             }
         }
-        
-
-        ate void birthDate_Validation(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
-        }
 
         private void clickChooseFile(object sender, EventArgs e)
         {
@@ -259,14 +227,99 @@ namespace Tutorial03
             }
         }
 
-        private void djoinDate_Validate(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
-        }
-
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            clear();
         }
+
+        private void clear()
+        {
+            txtStaffNo.Text = "";
+            txtNrcNo.Text = "";
+            txtStaffName.Text = "";
+            cbStaffType.Text = "";
+            rdMale.Checked = false;
+            rdfemale.Checked = false;
+            rdOther.Checked = false;
+            txtPhoneNo1.Text = "";
+            txtPhoneNo2.Text = "";
+            rtxtAddress.Text = "";
+            dJoinDate.Value = dJoinDate.MinDate;
+            dBirthDate.Value = DateTime.Today;
+            dJoinDate.CustomFormat = "0 / 00 / 0000";
+            dBirthDate.CustomFormat = "0 / 00 / 0000";
+        }
+
+        private void lvStaffInfo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvStaffInfo.SelectedItems.Count > 0)
+            {
+                btnAdd.Text = "Update";
+                listViewClick();
+            }
+            else
+            {
+                btnAdd.Text = "Add";
+                clear();
+            }
+        }
+
+        private void listViewClick()
+        {
+
+            txtStaffNo.Text = lvStaffInfo.SelectedItems[0].SubItems[0].Text;
+            txtNrcNo.Text = lvStaffInfo.SelectedItems[0].SubItems[5].Text;
+            txtStaffName.Text = lvStaffInfo.SelectedItems[0].SubItems[2].Text;
+
+            if (DateTime.TryParse(lvStaffInfo.SelectedItems[0].SubItems[3].Text, out DateTime joinDate))
+            {
+                dJoinDate.Value = joinDate;
+            }
+            else
+            {
+                dJoinDate.Value = DateTime.Today;
+            }
+
+            cbStaffType.Text = lvStaffInfo.SelectedItems[0].SubItems[4].Text;
+
+            string updateGender = lvStaffInfo.SelectedItems[0].SubItems[6].Text;
+            if (updateGender == "Male")
+            {
+                rdMale.Checked = true;
+            }
+            else if (updateGender == "Female")
+            {
+                rdfemale.Checked = true;
+            }
+            else if (updateGender == "Other")
+            {
+                rdOther.Checked = true;
+            }
+            else
+            {
+                rdMale.Checked = false;
+                rdfemale.Checked = false;
+                rdOther.Checked = false;
+            }
+
+            txtPhoneNo1.Text = lvStaffInfo.SelectedItems[0].SubItems[8].Text;
+            txtPhoneNo2.Text = lvStaffInfo.SelectedItems[0].SubItems[9].Text;
+            rtxtAddress.Text = lvStaffInfo.SelectedItems[0].SubItems[10].Text;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (lvStaffInfo.SelectedItems.Count > 0)
+            {
+                lvStaffInfo.Items.Remove(lvStaffInfo.SelectedItems[0]);
+                clear();
+            }
+            else
+            {
+                MessageBox.Show("Choose a row you want to Delete!");
+            }
+        }
+
     }
+
 }

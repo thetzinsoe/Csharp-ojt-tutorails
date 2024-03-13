@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Csharp-ojt-tutorails\\Tutorial03\\Tutorial03.csproj": {}
+    "C:\\Csharp-ojt-tutorails\\Tutorial03\\Tutorial03.csproj": {}
   },
   "projects": {
-    "E:\\Csharp-ojt-tutorails\\Tutorial03\\Tutorial03.csproj": {
+    "C:\\Csharp-ojt-tutorails\\Tutorial03\\Tutorial03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Csharp-ojt-tutorails\\Tutorial03\\Tutorial03.csproj",
+        "projectUniqueName": "C:\\Csharp-ojt-tutorails\\Tutorial03\\Tutorial03.csproj",
         "projectName": "Tutorial03",
-        "projectPath": "E:\\Csharp-ojt-tutorails\\Tutorial03\\Tutorial03.csproj",
-        "packagesPath": "C:\\Users\\thetzinsoe\\.nuget\\packages\\",
-        "outputPath": "E:\\Csharp-ojt-tutorails\\Tutorial03\\obj\\",
+        "projectPath": "C:\\Csharp-ojt-tutorails\\Tutorial03\\Tutorial03.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Csharp-ojt-tutorails\\Tutorial03\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\thetzinsoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
