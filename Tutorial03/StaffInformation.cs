@@ -11,6 +11,7 @@ namespace Tutorial03
 {
     public partial class StaffInformation : Form
     {
+
         private readonly DataTable staffDataTable = new DataTable();
 
         public StaffInformation()
@@ -137,6 +138,7 @@ namespace Tutorial03
                 if (lvStaffInfo.SelectedItems.Count > 0)
                 {
                     lvStaffInfo.SelectedItems[0].SubItems[0].Text = txtStaffNo.Text;
+                    lvStaffInfo.SelectedItems[0].SubItems[1].Text = txtStaffNo.Text;
                     lvStaffInfo.SelectedItems[0].SubItems[5].Text = txtNrcNo.Text;
                     lvStaffInfo.SelectedItems[0].SubItems[2].Text = txtStaffName.Text;
                     //if (DateTime.TryParse(lvStaffInfo.SelectedItems[0].SubItems[3].Text, out DateTime joinDate))
@@ -203,7 +205,23 @@ namespace Tutorial03
             {
                 ListViewItem item = new ListViewItem();
                 item.Text = row["StaffID"].ToString();
-                item.SubItems.Add("Image");
+                byte[] imageData = (byte[])row["Image"];
+                if (imageData.Length > 0)
+                {
+                    item.SubItems.Add(row["Image"].ToString());
+                    //using (MemoryStream ms = new MemoryStream(imageData))
+                    //{
+                    //    Image image = Image.FromStream(ms);
+                    //    lvStaffInfo.LargeImageList = new ImageList();
+                    //    lvStaffInfo.LargeImageList.Images.Add(image);
+                    //    item.ImageIndex = lvStaffInfo.LargeImageList.Images.Count - 1;
+                    //}
+                }
+                else
+                {
+                    item.SubItems.Add("Image");
+
+                }
                 item.SubItems.Add(row["StaffName"].ToString());
                 item.SubItems.Add(row["JoinDate"].ToString());
                 item.SubItems.Add(row["StaffType"].ToString());
@@ -320,6 +338,10 @@ namespace Tutorial03
             }
         }
 
+        private void StaffInformation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

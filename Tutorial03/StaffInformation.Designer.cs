@@ -503,6 +503,7 @@
             Controls.Add(txtStaffNo);
             Name = "StaffInformation";
             Text = "Staff Information";
+            Load += StaffInformation_Load;
             ((System.ComponentModel.ISupportInitialize)pbStaffPhoto).EndInit();
             ((System.ComponentModel.ISupportInitialize)errorProviderCommon).EndInit();
             ResumeLayout(false);
