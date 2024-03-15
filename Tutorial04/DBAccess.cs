@@ -15,7 +15,7 @@ namespace Tutorial4
         private static SqlDataReader DbReader;
         private static SqlDataAdapter adapter = new SqlDataAdapter();
         public SqlTransaction DbTest;
-        private static string strConnString = "Data Source =.\\sqlexpress01;Initial Catalog = Tutorial04; Integrated Security = True;";
+        private static string strConnString = "Data Source=.\\sqlexpress;Initial Catalog=Tutorial04;Integrated Security=True;";
         
         public void createConn()
         {

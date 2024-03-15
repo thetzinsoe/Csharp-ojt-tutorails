@@ -8,6 +8,12 @@ using System.Text.RegularExpressions;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using Tutorial4;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Security.Cryptography;
+using System.Net;
+using System.Reflection;
 
 namespace Tutorial03
 {
@@ -27,9 +33,6 @@ namespace Tutorial03
             dJoinDate.Format = DateTimePickerFormat.Custom;
             dJoinDate.CustomFormat = "0 / 00 / 0000";
 
-            //staffDataTable.Columns.Add("StaffID", typeof(int)).AutoIncrement = true;
-            //staffDataTable.Columns["StaffID"].AutoIncrementSeed = 1;
-            //staffDataTable.Columns.Add("Image", typeof(byte[]));
             staffDataTable.Columns.Add("StaffID", typeof(int));
             staffDataTable.Columns.Add("Image", typeof(string));
             staffDataTable.Columns.Add("StaffName", typeof(string));
@@ -43,42 +46,9 @@ namespace Tutorial03
             staffDataTable.Columns.Add("Age", typeof(int));
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string query = "SELECT * FROM StaffInformation;";
-            SqlDataReader reader = DB.readDatathroughReader(query);
-            if (reader.HasRows)
-            {
-                foreach (var row in reader)
-                {
-                    int id = reader.GetInt32(0);
-                    string Name = reader.GetString(5);
-                    MessageBox.Show("ID: " + id + " Name: " + Name);
-                   // byte[] imageData = pbStaffPhoto.Image != null ? ImageToByteArray(pbStaffPhoto.Image) : new byte[0];
-                    DataRow newRow = staffDataTable.NewRow();
-                    newRow["StaffID"] = reader.GetInt32(0);
-                    newRow["Image"] = reader.GetString(1); ;
-                    newRow["StaffName"] = reader.GetString(2);
-                    newRow["JoinDate"] = reader.GetDateTime(3).ToString();
-                    newRow["StaffType"] = reader.GetString(4);
-                    newRow["NRCNo"] = reader.GetString(5);
-                    newRow["Gender"] = reader.GetString(6);
-                    newRow["Age"] = reader.GetByte(7).ToString();
-                    newRow["PhoneNumber1"] = reader.GetInt32(8);
-                    newRow["PhoneNumber2"] = reader.GetInt32(9);
-                    newRow["Address"] = reader.GetString(10);
-                    staffDataTable.Rows.Add(newRow);
-                    //MessageBox.Show("Adding staff successful");
-                    PopulateListViewWithDataTable();
-                    clear();
-                }
-            }
-            reader.Close();
-        }
-
-
         private void dBirthDate_ValueChanged(object sender, EventArgs e)
         {
+
             if (dBirthDate.Value != DateTime.MinValue)
             {
                 dBirthDate.CustomFormat = "dd / MM / yyyy";
@@ -108,6 +78,7 @@ namespace Tutorial03
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
             string alphaPattern = @"^[\p{L}\s]+$";
             if (!Regex.IsMatch(txtStaffName.Text, alphaPattern))
             {
@@ -165,6 +136,8 @@ namespace Tutorial03
                 errorProviderCommon.SetError(txtPhoneNo1, "Invalid phone number format. Please enter a numeric value.");
             }
 
+            byte[] imageData = pbStaffPhoto.Image != null ? ImageToByteArray(pbStaffPhoto.Image) : new byte[0];
+
             bool errorsPresent = errorProviderCommon.ContainerControl.Controls
                 .OfType<Control>()
                 .Any(control => !string.IsNullOrEmpty(errorProviderCommon.GetError(control)));
@@ -174,30 +147,61 @@ namespace Tutorial03
                 if (lvStaffInfo.SelectedItems.Count > 0)
                 {
                     lvStaffInfo.SelectedItems[0].SubItems[0].Text = txtStaffNo.Text;
-                    lvStaffInfo.SelectedItems[0].SubItems[1].Text = txtStaffNo.Text;
+                    //update image soon
+                    lvStaffInfo.SelectedItems[0].SubItems[1].Text = "Image";
                     lvStaffInfo.SelectedItems[0].SubItems[5].Text = txtNrcNo.Text;
                     lvStaffInfo.SelectedItems[0].SubItems[2].Text = txtStaffName.Text;
-                    //if (DateTime.TryParse(lvStaffInfo.SelectedItems[0].SubItems[3].Text, out DateTime joinDate))
-                    //{
-                    //    dJoinDate.Value = joinDate;
-                    //}
-                    //else
-                    //{
-                    //    dJoinDate.Value = DateTime.Today;
-                    //}
                     lvStaffInfo.SelectedItems[0].SubItems[4].Text = cbStaffType.Text;
                     lvStaffInfo.SelectedItems[0].SubItems[6].Text = GetGender();
                     lvStaffInfo.SelectedItems[0].SubItems[8].Text = txtPhoneNo1.Text;
                     lvStaffInfo.SelectedItems[0].SubItems[9].Text = txtPhoneNo2.Text;
                     lvStaffInfo.SelectedItems[0].SubItems[10].Text = rtxtAddress.Text;
                     clear();
+
+                    SqlCommand updateCommand = new SqlCommand("UPDATE StaffInformation SET Image=@Image, Name=@Name, JoinFrom=@JoinFrom, StaffType=@StaffType, NrcNo=@NrcNo, Gender=@Gender, BirthDate=@BirthDate, PhoneNo1=@PhoneNo1, PhoneNo2=@PhoneNo2, Address=@Address WHERE Id=@StaffId");
+
+                    // Bind parameters
+                    updateCommand.Parameters.AddWithValue("@Image", imageData);
+                    updateCommand.Parameters.AddWithValue("@Name", txtStaffName.Text);
+                    updateCommand.Parameters.AddWithValue("@JoinFrom", dJoinDate.Value.Date);
+                    updateCommand.Parameters.AddWithValue("@StaffType", cbStaffType.SelectedItem.ToString());
+                    updateCommand.Parameters.AddWithValue("@NrcNo", txtNrcNo.Text);
+                    updateCommand.Parameters.AddWithValue("@Gender", GetGender().ToString());
+                    updateCommand.Parameters.AddWithValue("@BirthDate", dBirthDate.Value.Date);
+                    updateCommand.Parameters.AddWithValue("@PhoneNo1", txtPhoneNo1.Text); // Assuming PhoneNo1 is an integer
+                    updateCommand.Parameters.AddWithValue("@PhoneNo2", txtPhoneNo2.Text);
+                    updateCommand.Parameters.AddWithValue("@Address", rtxtAddress.Text);
+                    updateCommand.Parameters.AddWithValue("@StaffId", txtStaffNo.Text); // Assuming the primary key column is named "Id"
+
+                    int result = DB.executeQuery(updateCommand);
+                    if (result == 1)
+                    {
+                        MessageBox.Show("Updating Staff Success");
+                        clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to Update Staff");
+                        return;
+                    }
                 }
                 else
                 {
-                    byte[] imageData = pbStaffPhoto.Image != null ? ImageToByteArray(pbStaffPhoto.Image) : new byte[0];
-
                     DataRow newRow = staffDataTable.NewRow();
-                    newRow["Image"] = imageData;
+                    int id = 1;
+                    if (staffDataTable.Rows.Count > 0)
+                    {
+                        foreach (DataRow row in staffDataTable.Rows)
+                        {
+                            int rowId = Convert.ToInt32(row["StaffID"]);
+                            if (rowId >= id)
+                            {
+                                id = rowId + 1;
+                            }
+                        }
+                    }
+                    newRow["StaffID"] = id;
+                    newRow["Image"] = imageData.ToString();
                     newRow["StaffName"] = txtStaffName.Text;
                     newRow["Gender"] = GetGender();
                     newRow["Age"] = txtAge.Text;
@@ -207,12 +211,33 @@ namespace Tutorial03
                     newRow["PhoneNumber1"] = txtPhoneNo1.Text;
                     newRow["PhoneNumber2"] = txtPhoneNo2.Text;
                     newRow["Address"] = rtxtAddress.Text;
-
                     staffDataTable.Rows.Add(newRow);
-                    MessageBox.Show("Adding staff successful");
                     PopulateListViewWithDataTable();
-                    clear();
+
+                    SqlCommand insertCommand = new SqlCommand("INSERT INTO StaffInformation (Image,Name,JoinFrom,StaffType,NrcNo,Gender,BirthDate,PhoneNo1,PhoneNo2,Address) VALUES (@Image,@Name,@JoinFrom,@StaffType,@NrcNo,@Gender,@BirthDate,@PhoneNo1,@PhoneNo2,@Address)");
+                    insertCommand.Parameters.AddWithValue("@Name", txtStaffName.Text);
+                    insertCommand.Parameters.AddWithValue("@Image", imageData.ToString());
+                    insertCommand.Parameters.AddWithValue("@JoinFrom", dBirthDate.Value.Date);
+                    insertCommand.Parameters.AddWithValue("@StaffType", cbStaffType.SelectedItem.ToString());
+                    insertCommand.Parameters.AddWithValue("@NrcNo", txtNrcNo.Text);
+                    insertCommand.Parameters.AddWithValue("@Gender", GetGender().ToString());
+                    insertCommand.Parameters.AddWithValue("@BirthDate", dBirthDate.Value.Date);
+                    insertCommand.Parameters.AddWithValue("@PhoneNo1", txtPhoneNo1.Text);
+                    insertCommand.Parameters.AddWithValue("@PhoneNo2", txtPhoneNo2.Text);
+                    insertCommand.Parameters.AddWithValue("@Address", rtxtAddress.Text);
+                    int result = DB.executeQuery(insertCommand);
+                    if (result == 1)
+                    {
+                        MessageBox.Show("Adding Staff Success");
+                        clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Fail");
+                    }
                 }
+
+               
             }
             else
             {
@@ -241,23 +266,10 @@ namespace Tutorial03
             {
                 ListViewItem item = new ListViewItem();
                 item.Text = row["StaffID"].ToString();
-                // byte[] imageData = (byte[])row["Image"];
-                //  if (imageData.Length > 0)
-                //  {
-                //item.SubItems.Add(row["Image"].ToString());
-                //using (MemoryStream ms = new MemoryStream(imageData))
-                //{
-                //    Image image = Image.FromStream(ms);
-                //    lvStaffInfo.LargeImageList = new ImageList();
-                //    lvStaffInfo.LargeImageList.Images.Add(image);
-                //    item.ImageIndex = lvStaffInfo.LargeImageList.Images.Count - 1;
-                //}
-                //  }
-                //   else
-                //  {
+               
+                //update comming soon
                 item.SubItems.Add("Image");
 
-              //  }
                 item.SubItems.Add(row["StaffName"].ToString());
                 item.SubItems.Add(row["JoinDate"].ToString());
                 item.SubItems.Add(row["StaffType"].ToString());
@@ -302,17 +314,20 @@ namespace Tutorial03
             dBirthDate.Value = DateTime.Today;
             dJoinDate.CustomFormat = "0 / 00 / 0000";
             dBirthDate.CustomFormat = "0 / 00 / 0000";
+            pbStaffPhoto.Image = null;
         }
 
         private void lvStaffInfo_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lvStaffInfo.SelectedItems.Count > 0)
             {
+                btnDelete.Enabled = true;
                 btnAdd.Text = "Update";
                 listViewClick();
             }
-            else
-            {
+            else { 
+                btnDelete.Enabled = false
+                    ;
                 btnAdd.Text = "Add";
                 clear();
             }
@@ -333,6 +348,8 @@ namespace Tutorial03
             {
                 dJoinDate.Value = DateTime.Today;
             }
+
+            dBirthDate.Value = DateTime.Today;
 
             cbStaffType.Text = lvStaffInfo.SelectedItems[0].SubItems[4].Text;
 
@@ -373,8 +390,36 @@ namespace Tutorial03
                 MessageBox.Show("Choose a row you want to Delete!");
             }
         }
-        private void StaffInformation_Load(object sender, EventArgs e)
+
+        private void first_load(object sender, EventArgs e)
         {
+            btnDelete.Enabled = false;
+            string query = "SELECT * FROM StaffInformation;";
+            SqlDataReader reader = DB.readDatathroughReader(query);
+            if (reader.HasRows)
+            {
+                foreach (var row in reader)
+                {
+                    DataRow newRow = staffDataTable.NewRow();
+                    newRow["StaffID"] = reader.GetInt32(0);
+                    newRow["Image"] = reader.GetString(1); ;
+                    newRow["StaffName"] = reader.GetString(2);
+                    newRow["JoinDate"] = reader.GetDateTime(3).Date;
+                    newRow["StaffType"] = reader.GetString(4);
+                    newRow["NRCNo"] = reader.GetString(5);
+                    newRow["Gender"] = reader.GetString(10);
+                    newRow["Age"] = (DateTime.Today.Year - reader.GetDateTime(6).Year).ToString();
+                    newRow["PhoneNumber1"] = reader.GetInt32(7);
+                    newRow["PhoneNumber2"] = reader.GetInt32(8);
+                    newRow["Address"] = reader.GetString(9);
+
+                    staffDataTable.Rows.Add(newRow);
+                    //MessageBox.Show("Adding staff successful");
+                    PopulateListViewWithDataTable();
+                    clear();
+                }
+            }
+            reader.Close();
         }
     }
 }
