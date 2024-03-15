@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|c:\\csharp-ojt-tutorails\\tutorial04\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial04\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -54,8 +54,7 @@
               "RelativeToolTip": "DBAccess.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T04:35:00.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T04:35:00.12Z"
             },
             {
               "$type": "Document",
@@ -65,7 +64,7 @@
               "RelativeDocumentMoniker": "StaffInformation.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial04\\StaffInformation.cs",
               "RelativeToolTip": "StaffInformation.cs",
-              "ViewState": "AQIAANcAAAAAAAAAAAA1wPIAAAA2AAAA",
+              "ViewState": "AQIAAKcAAAAAAAAAAAA1wPIAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T09:16:49.766Z",
               "EditorCaption": ""
