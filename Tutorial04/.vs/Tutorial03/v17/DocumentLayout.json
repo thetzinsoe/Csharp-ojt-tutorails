@@ -7,8 +7,17 @@
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|e:\\csharp-ojt-tutorails\\datagridview\\dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial04\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|e:\\csharp-ojt-tutorails\\tutorial04\\dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 179a3309d57f2e63fb4228bfe5eeab8937efe0c3
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 762cdb356f77a55dadd36e3e721275b171247efa
     },
     {
       "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\DataGridView\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -62,8 +71,7 @@
               "RelativeToolTip": "DBAccess.cs",
               "ViewState": "AQIAAF8AAAAAAAAAAAAuwFcAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T04:35:00.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T04:35:00.12Z"
             },
             {
               "$type": "Document",
@@ -73,7 +81,15 @@
               "RelativeDocumentMoniker": "StaffInformation.cs",
               "ToolTip": "E:\\Csharp-ojt-tutorails\\DataGridView\\StaffInformation.cs",
               "RelativeToolTip": "StaffInformation.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAHEBAAAAAAAAAAAywLYBAABBAAAA",
+=======
+<<<<<<< HEAD
+              "ViewState": "AQIAAKcAAAAAAAAAAAA1wPIAAAA2AAAA",
+=======
+              "ViewState": "AQIAAJwAAAAAAAAAAAAcwKoAAABXAAAA",
+>>>>>>> 762cdb356f77a55dadd36e3e721275b171247efa
+>>>>>>> 179a3309d57f2e63fb4228bfe5eeab8937efe0c3
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T09:16:49.766Z",
               "EditorCaption": ""
