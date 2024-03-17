@@ -10,11 +10,11 @@ namespace Tutorial4
 {
     internal class DBAccess
     {
-        private static SqlConnection connection = new SqlConnection();
+        public static SqlConnection connection = new SqlConnection();
         private static SqlCommand command = new SqlCommand();
         private static SqlDataReader DbReader;
         private static SqlDataAdapter adapter = new SqlDataAdapter();
-        public SqlTransaction DbTest;
+        public SqlTransaction Tutorial04;
         private static string strConnString = "Data Source=.\\sqlexpress;Initial Catalog=Tutorial04;Integrated Security=True;";
         
         public void createConn()
@@ -25,6 +25,24 @@ namespace Tutorial4
                 {
                     connection.ConnectionString = strConnString;
                     connection.Open();
+                   // MessageBox.Show("ok");
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(""+ex.Message);
+                throw ex;
+            }
+        }
+
+        public void closeConn()
+        {
+            try
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.ConnectionString = strConnString;
+                    connection.Close();
                     //MessageBox.Show("ok");
                 }
             }
@@ -34,6 +52,7 @@ namespace Tutorial4
                 throw ex;
             }
         }
+
 
         public void readDatathroughAdapter(string query, DataTable tb1Name)
         {
