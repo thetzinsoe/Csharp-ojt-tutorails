@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tutorial03;
 using Tutorial4;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -42,26 +43,38 @@ namespace Tutorial04
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            string dpassword = EncryptionHelper.Decrypt(password);
-            string query = "SELECT * FROM UserTable Where Name='" + username + "' and Password='"+dpassword+"' ";
+            bool LoginAuth = false;
+            string query = "SELECT * FROM UserTable WHERE Name='" + username + "'";
             DB.readDatathroughAdapter(query, userTable);
-
-            foreach(DataRow row in userTable.Rows)
-            {
-                MessageBox.Show(row[0] + ""+ row[1] + "" + row[2]);
-                return;
-            }
             if (userTable.Rows.Count > 0)
             {
-                name = userTable.Rows[0]["Name"].ToString();
-                pass = userTable.Rows[0]["Pass"].ToString();
-               
-                MessageBox.Show("Name is : " + name + "\nPassword is : " + pass );
-              
+                foreach (DataRow row in userTable.Rows)
+                {
+                    string dbPass = (string)(row["Password"]);
+                    string dcPass = EncryptionHelper.Decrypt(dbPass);
+                    //MessageBox.Show(dcPass + "");
+                    if (dcPass == txtPassword.Text)
+                    {
+                        errorProviderLg.SetError(txtPassword, "");
+                        LoginAuth = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Password!", "Try Again");
+                        errorProviderLg.SetError(txtPassword, "Worng Password");
+                        LoginAuth = false;
+                    }
+                }
             }
             else
             {
-                MessageBox.Show("Login Fail");
+                MessageBox.Show("User Not Found!", "Error!");
+            }
+            if (LoginAuth)
+            {
+                this.Hide();
+                StaffInformation staffInformation = new StaffInformation();
+                staffInformation.Show();
             }
         }
     }

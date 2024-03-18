@@ -47,7 +47,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(281, 42);
+            label1.Location = new Point(321, 47);
             label1.Name = "label1";
             label1.Size = new Size(142, 31);
             label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Georgia", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(117, 139);
+            label2.Location = new Point(134, 155);
             label2.Name = "label2";
             label2.Size = new Size(96, 23);
             label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Georgia", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(117, 185);
+            label3.Location = new Point(134, 207);
             label3.Name = "label3";
             label3.Size = new Size(91, 23);
             label3.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Georgia", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(117, 232);
+            label4.Location = new Point(134, 259);
             label4.Name = "label4";
             label4.Size = new Size(166, 23);
             label4.TabIndex = 3;
@@ -86,10 +86,11 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Cursor = Cursors.Hand;
             label5.ForeColor = Color.Red;
-            label5.Location = new Point(117, 338);
+            label5.Location = new Point(134, 378);
             label5.Name = "label5";
-            label5.Size = new Size(206, 17);
+            label5.Size = new Size(216, 19);
             label5.TabIndex = 4;
             label5.Text = "Are you a member? Click to login!";
             label5.Click += label5_Click;
@@ -97,32 +98,32 @@
             // txtUsername
             // 
             txtUsername.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(302, 140);
+            txtUsername.Location = new Point(345, 156);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(272, 26);
+            txtUsername.Size = new Size(310, 26);
             txtUsername.TabIndex = 5;
             // 
             // txtPassword
             // 
             txtPassword.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(302, 185);
+            txtPassword.Location = new Point(345, 207);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(272, 26);
+            txtPassword.Size = new Size(310, 26);
             txtPassword.TabIndex = 6;
             // 
             // txtConfirmPassword
             // 
             txtConfirmPassword.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtConfirmPassword.Location = new Point(302, 233);
+            txtConfirmPassword.Location = new Point(345, 260);
             txtConfirmPassword.Name = "txtConfirmPassword";
-            txtConfirmPassword.Size = new Size(272, 26);
+            txtConfirmPassword.Size = new Size(310, 26);
             txtConfirmPassword.TabIndex = 7;
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(499, 282);
+            btnRegister.Location = new Point(570, 315);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(75, 34);
+            btnRegister.Size = new Size(86, 38);
             btnRegister.TabIndex = 8;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
@@ -130,9 +131,9 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(397, 282);
+            btnCancel.Location = new Point(454, 315);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(75, 34);
+            btnCancel.Size = new Size(86, 38);
             btnCancel.TabIndex = 9;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
@@ -144,9 +145,9 @@
             // 
             // Register
             // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(689, 450);
+            ClientSize = new Size(787, 503);
             Controls.Add(btnCancel);
             Controls.Add(btnRegister);
             Controls.Add(txtConfirmPassword);

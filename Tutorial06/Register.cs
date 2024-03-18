@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using Tutorial4;
 using System.Security.Cryptography;
 using Tutorial03;
+using System.Collections;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Tutorial04
 {
@@ -44,6 +46,28 @@ namespace Tutorial04
             }
             else
             {
+                errorProviderRe.SetError(txtUsername, "");
+            }
+
+            DataTable userTable = new DataTable();
+            string findUser = "SELECT * FROM UserTable WHERE Name='" + username + "'";
+            DB.readDatathroughAdapter(findUser, userTable);
+
+            if (userTable.Rows.Count > 0)
+            {
+                foreach (DataRow row in userTable.Rows)
+                {
+                    if (row["Name"].ToString() == username)
+                    {
+                        //MessageBox.Show("Name already exists: " + row["Name"]);
+                        errorProviderRe.SetError(txtUsername, "This Name is already created!");
+                        return;
+                    }
+                }
+            }
+            else
+            {
+               // MessageBox.Show("No matching records found.");
                 errorProviderRe.SetError(txtUsername, "");
             }
 
