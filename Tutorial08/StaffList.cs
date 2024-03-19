@@ -277,13 +277,22 @@ namespace Tutorial04
                 string filePath = saveFile.FileName;
                 xlWorkBook.SaveAs(filePath, Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
                 MessageBox.Show("Excel file created, you can find the file at: " + filePath);
-            }
 
-            xlWorkBook.Close(true, misValue, misValue);
-            xlApp.Quit();
-            releaseObject(xlWorkSheet);
-            releaseObject(xlWorkBook);
-            releaseObject(xlApp);
+                // Continue executing the rest of the code
+                xlWorkBook.Close(true, misValue, misValue);
+                xlApp.Quit();
+                releaseObject(xlWorkSheet);
+                releaseObject(xlWorkBook);
+                releaseObject(xlApp);
+            }
+            else
+            {
+                // User clicked Cancel, handle accordingly
+                // You can either leave this block empty or execute some other code
+                // Example:
+                MessageBox.Show("Operation canceled by the user.");
+                // You can still continue executing some other parts of your program here if needed
+            }
         }
 
         private void releaseObject(object obj)

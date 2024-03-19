@@ -47,10 +47,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(1129, 180);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Location = new Point(903, 144);
             button1.Name = "button1";
-            button1.Size = new Size(94, 42);
+            button1.Size = new Size(75, 34);
             button1.TabIndex = 0;
             button1.Text = "Search\r\n";
             button1.UseVisualStyleBackColor = true;
@@ -60,29 +59,26 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Georgia", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(561, 12);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(449, 10);
             label1.Name = "label1";
-            label1.Size = new Size(183, 47);
+            label1.Size = new Size(153, 39);
             label1.TabIndex = 2;
             label1.Text = "Staff List";
             // 
             // txtSearch
             // 
             txtSearch.Font = new Font("Georgia", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSearch.Location = new Point(789, 180);
-            txtSearch.Margin = new Padding(4, 4, 4, 4);
+            txtSearch.Location = new Point(637, 143);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(332, 40);
+            txtSearch.Size = new Size(266, 34);
             txtSearch.TabIndex = 3;
             txtSearch.TextChanged += SearchBox_TextChange;
             // 
             // btnNext
             // 
-            btnNext.Location = new Point(834, 742);
-            btnNext.Margin = new Padding(4, 4, 4, 4);
+            btnNext.Location = new Point(667, 594);
             btnNext.Name = "btnNext";
-            btnNext.Size = new Size(64, 45);
+            btnNext.Size = new Size(51, 36);
             btnNext.TabIndex = 53;
             btnNext.Text = ">>";
             btnNext.UseVisualStyleBackColor = true;
@@ -90,10 +86,9 @@
             // 
             // btnPrevious
             // 
-            btnPrevious.Location = new Point(388, 742);
-            btnPrevious.Margin = new Padding(4, 4, 4, 4);
+            btnPrevious.Location = new Point(310, 594);
             btnPrevious.Name = "btnPrevious";
-            btnPrevious.Size = new Size(69, 45);
+            btnPrevious.Size = new Size(55, 36);
             btnPrevious.TabIndex = 52;
             btnPrevious.Text = "<<";
             btnPrevious.UseVisualStyleBackColor = true;
@@ -101,10 +96,9 @@
             // 
             // btnEnd
             // 
-            btnEnd.Location = new Point(740, 742);
-            btnEnd.Margin = new Padding(4, 4, 4, 4);
+            btnEnd.Location = new Point(592, 594);
             btnEnd.Name = "btnEnd";
-            btnEnd.Size = new Size(69, 45);
+            btnEnd.Size = new Size(55, 36);
             btnEnd.TabIndex = 51;
             btnEnd.Text = ">";
             btnEnd.UseVisualStyleBackColor = true;
@@ -112,10 +106,9 @@
             // 
             // btnStart
             // 
-            btnStart.Location = new Point(479, 742);
-            btnStart.Margin = new Padding(4, 4, 4, 4);
+            btnStart.Location = new Point(383, 594);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(61, 45);
+            btnStart.Size = new Size(49, 36);
             btnStart.TabIndex = 50;
             btnStart.Text = "<";
             btnStart.UseVisualStyleBackColor = true;
@@ -124,11 +117,10 @@
             // txtPagination
             // 
             txtPagination.Font = new Font("Georgia", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPagination.Location = new Point(566, 742);
-            txtPagination.Margin = new Padding(4, 4, 4, 4);
+            txtPagination.Location = new Point(453, 594);
             txtPagination.Name = "txtPagination";
             txtPagination.ReadOnly = true;
-            txtPagination.Size = new Size(148, 40);
+            txtPagination.Size = new Size(119, 34);
             txtPagination.TabIndex = 49;
             txtPagination.TextAlign = HorizontalAlignment.Center;
             // 
@@ -142,23 +134,21 @@
             dgvStaffInformation.BackgroundColor = Color.White;
             dgvStaffInformation.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvStaffInformation.GridColor = Color.MediumSpringGreen;
-            dgvStaffInformation.Location = new Point(-4, 230);
-            dgvStaffInformation.Margin = new Padding(4, 4, 4, 4);
+            dgvStaffInformation.Location = new Point(-3, 184);
             dgvStaffInformation.MultiSelect = false;
             dgvStaffInformation.Name = "dgvStaffInformation";
             dgvStaffInformation.ReadOnly = true;
             dgvStaffInformation.RowHeadersWidth = 62;
             dgvStaffInformation.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvStaffInformation.Size = new Size(1226, 475);
+            dgvStaffInformation.Size = new Size(981, 380);
             dgvStaffInformation.TabIndex = 48;
             dgvStaffInformation.CellClick += cellClick_edit;
             // 
             // button2
             // 
-            button2.Location = new Point(388, 80);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Location = new Point(310, 64);
             button2.Name = "button2";
-            button2.Size = new Size(134, 54);
+            button2.Size = new Size(107, 43);
             button2.TabIndex = 54;
             button2.Text = "Add New";
             button2.UseVisualStyleBackColor = true;
@@ -166,10 +156,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point(1079, 16);
-            button4.Margin = new Padding(4, 4, 4, 4);
+            button4.Location = new Point(863, 13);
             button4.Name = "button4";
-            button4.Size = new Size(134, 54);
+            button4.Size = new Size(107, 43);
             button4.TabIndex = 56;
             button4.Text = "Log Out";
             button4.UseVisualStyleBackColor = true;
@@ -177,10 +166,9 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(580, 80);
-            btnUpdate.Margin = new Padding(4, 4, 4, 4);
+            btnUpdate.Location = new Point(464, 64);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(134, 54);
+            btnUpdate.Size = new Size(107, 43);
             btnUpdate.TabIndex = 57;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -188,10 +176,9 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(764, 80);
-            btnDelete.Margin = new Padding(4, 4, 4, 4);
+            btnDelete.Location = new Point(611, 64);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(134, 54);
+            btnDelete.Size = new Size(107, 43);
             btnDelete.TabIndex = 58;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
@@ -199,10 +186,9 @@
             // 
             // btnExcelExport
             // 
-            btnExcelExport.Location = new Point(15, 164);
-            btnExcelExport.Margin = new Padding(4, 4, 4, 4);
+            btnExcelExport.Location = new Point(3, 142);
             btnExcelExport.Name = "btnExcelExport";
-            btnExcelExport.Size = new Size(134, 54);
+            btnExcelExport.Size = new Size(169, 37);
             btnExcelExport.TabIndex = 59;
             btnExcelExport.Text = "Export to Excel";
             btnExcelExport.UseVisualStyleBackColor = true;
@@ -210,9 +196,9 @@
             // 
             // StaffList
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1228, 812);
+            ClientSize = new Size(982, 650);
             Controls.Add(btnExcelExport);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
@@ -227,7 +213,6 @@
             Controls.Add(txtSearch);
             Controls.Add(label1);
             Controls.Add(button1);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "StaffList";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "StaffList";
