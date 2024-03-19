@@ -21,14 +21,15 @@ namespace Tutorial03
 {
     public partial class StaffInformation : Form
     {
-        EncryptionHelper EncryptionHelper;
+        EncryptionHelper EncryptionHelper = new EncryptionHelper();
         private readonly DataTable staffDataTable = new DataTable();
         DBAccess DB = new DBAccess();
+        DataTable userTable = new DataTable();
         string imagePath = "";
         byte[] imageData = new byte[0];
         byte[] noImage = File.ReadAllBytes(Environment.CurrentDirectory + "\\Images\\noImage.png");
 
-        public StaffInformation()
+        public StaffInformation(string username)
         {
             InitializeComponent();
             txtStaffName.Focus();
@@ -40,28 +41,12 @@ namespace Tutorial03
             dJoinDate.MaxDate = DateTime.Now;
             dJoinDate.Format = DateTimePickerFormat.Custom;
             dJoinDate.CustomFormat = "0 / 00 / 0000";
-            string username = "";
-            if (!string.IsNullOrEmpty(Register.name)) 
-            {
-                
-                username = Register.name;
-                MessageBox.Show("Register" + username + " register");
-                loadData(username);
-                
-            }
-            else if (!string.IsNullOrEmpty(Login.name))
-            {
-               
-                username = Login.name;
-                MessageBox.Show("Login" + username + " login");
-                loadData(username);
-       
-            }
+            loadData(username);
         }
 
         private void loadData(string username)
         {
-            string query = "SELECT * FROM Tuto07 WHERE Name='" + username + "' ";
+            string query = "SELECT * FROM Tuto07 WHERE Name='" + username + "'";
             SqlDataReader reader = DB.readDatathroughReader(query); // Assuming the method accepts a parameter
             if (reader.HasRows)
             {
@@ -111,10 +96,10 @@ namespace Tutorial03
                     txtPhoneNo1.Text = reader.GetInt32(7).ToString();
                     txtPhoneNo2.Text = reader.GetInt32(8).ToString();
                     rtxtAddress.Text = reader.GetString(9);
-                    string enpass = (string)reader.GetString(11);
-                    string pass = EncryptionHelper.Decrypt(enpass);
-                    txtPassword.Text = pass;
-                    txtConfirmPassword.Text = pass;
+                    string ePass = reader.GetString(11);
+                    string pPass = EncryptionHelper.Decrypt(ePass);
+                    txtPassword.Text = pPass;
+                    txtConfirmPassword.Text = pPass;
                 }
             }
             else
@@ -124,44 +109,8 @@ namespace Tutorial03
             reader.Close();
         }
 
-
-
-
-        private void dBirthDate_ValueChanged(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
-
-            if (dBirthDate.Value != DateTime.MinValue)
-            {
-                dBirthDate.CustomFormat = "dd / MM / yyyy";
-                int age = DateTime.Today.Year - dBirthDate.Value.Year;
-                if (dBirthDate.Value.Date > DateTime.Today.AddYears(-age))
-                    age--;
-
-                txtAge.Text = age.ToString();
-
-            }
-            else
-            {
-                dBirthDate.CustomFormat = "0 / 00 / 0000";
-                txtAge.Text = "";
-            }
-        }
-
-        private void dJoinDate_ValueChanged(object sender, EventArgs e)
-        {
-            if (dJoinDate.Value != DateTime.MinValue)
-            {
-                dJoinDate.CustomFormat = "dd / MM / yyyy";
-            }
-            else
-            {
-                dJoinDate.CustomFormat = "0 / 00 / 0000";
-            }
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
             string alphaPattern = @"^[\p{L}\s]+$";
             if (!Regex.IsMatch(txtStaffName.Text, alphaPattern))
             {
@@ -236,71 +185,79 @@ namespace Tutorial03
 
             if (!errorsPresent)
             {
-                //if (dgvStaffInformation.SelectedCells.Count > 0)
-                //{
-                //    try
-                //    {
-                //        int staffId = 0;
-                //        var firstCellValue = txtStaffNo.Text;
-                //        staffId = Convert.ToInt32(firstCellValue); SqlCommand updateCommand = new SqlCommand("UPDATE StaffInformation SET Image=@Image, Name=@Name, JoinFrom=@JoinFrom, StaffType=@StaffType, NrcNo=@NrcNo, Gender=@Gender, BirthDate=@BirthDate, PhoneNo1=@PhoneNo1, PhoneNo2=@PhoneNo2, Address=@Address WHERE Id=" + staffId);
+                try
+                {
+                    int staffId = 0;
+                    var firstCellValue = txtStaffNo.Text;
+                    staffId = Convert.ToInt32(firstCellValue);
+                    string pPass = EncryptionHelper.Encrypt(txtPassword.Text.ToString());
+                    SqlCommand updateCommand = new SqlCommand("UPDATE Tuto07 SET Image=@Image, Name=@Name, JoinFrom=@JoinFrom, StaffType=@StaffType, NrcNo=@NrcNo, Gender=@Gender, BirthDate=@BirthDate, PhoneNo1=@PhoneNo1, PhoneNo2=@PhoneNo2, Address=@Address,Password=@Password WHERE Id=" + staffId);
 
-                //        // Bind parameters
-                //        updateCommand.Parameters.AddWithValue("@Image", imagePath);
-                //        updateCommand.Parameters.AddWithValue("@Name", txtStaffName.Text);
-                //        updateCommand.Parameters.AddWithValue("@JoinFrom", dJoinDate.Value.Date);
-                //        updateCommand.Parameters.AddWithValue("@StaffType", cbStaffType.SelectedItem.ToString());
-                //        updateCommand.Parameters.AddWithValue("@NrcNo", txtNrcNo.Text);
-                //        updateCommand.Parameters.AddWithValue("@Gender", GetGender().ToString());
-                //        updateCommand.Parameters.AddWithValue("@BirthDate", dBirthDate.Value.Date);
-                //        updateCommand.Parameters.AddWithValue("@PhoneNo1", txtPhoneNo1.Text);
-                //        updateCommand.Parameters.AddWithValue("@PhoneNo2", txtPhoneNo2.Text);
-                //        updateCommand.Parameters.AddWithValue("@Address", rtxtAddress.Text);
-                //        updateCommand.Parameters.AddWithValue("@StaffId", txtStaffNo.Text);
-                //        int result = DB.executeQuery(updateCommand);
-                //        if (result == 1)
-                //        {
-                //            btnGtSt.Text = "Add";
-                //            btnDelete.Enabled = false;
-                //            foreach (DataGridViewRow row in dgvStaffInformation.Rows)
-                //            {
-                //                if (row.Cells[0].Value != null && (Convert.ToInt32(row.Cells[0].Value) == staffId))
-                //                {
-                //                    row.Cells[0].Value = staffId;
-                //                    if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
-                //                    {
-                //                        imageData = File.ReadAllBytes(imagePath);
-                //                        row.Cells[1].Value = imageData;
-                //                    }
-                //                    else
-                //                    {
-                //                        row.Cells[1].Value = noImage;
-                //                    }
-                //                    row.Cells["Staff Name"].Value = txtStaffName.Text;
-                //                    row.Cells["Gender"].Value = GetGender();
-                //                    row.Cells["Age"].Value = txtAge.Text;
-                //                    row.Cells["Join From"].Value = dJoinDate.Value.Date;
-                //                    row.Cells["Staff Type"].Value = cbStaffType.SelectedItem.ToString();
-                //                    row.Cells["NRC No"].Value = txtNrcNo.Text;
-                //                    row.Cells["Phone No1"].Value = txtPhoneNo1.Text;
-                //                    row.Cells["Phone No2"].Value = txtPhoneNo2.Text;
-                //                    row.Cells["Address"].Value = rtxtAddress.Text;
-                //                    MessageBox.Show("Updating Staff Success");
-                //                    dgvStaffInformation.Rows[0].Selected = false;
-                //                    clear();
-                //                }
-                //            }
-                //            return;
-                //        }
-                //        else
-                //        {
-                //            MessageBox.Show("Failed to Update Staff");
-                //            return;
-                //        }
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show("" + ex);
-                //}
+                    // Bind parameters
+                    updateCommand.Parameters.AddWithValue("@Image", imagePath);
+                    updateCommand.Parameters.AddWithValue("@Name", txtStaffName.Text);
+                    updateCommand.Parameters.AddWithValue("@JoinFrom", dJoinDate.Value.Date);
+                    updateCommand.Parameters.AddWithValue("@StaffType", cbStaffType.SelectedItem.ToString());
+                    updateCommand.Parameters.AddWithValue("@NrcNo", txtNrcNo.Text);
+                    updateCommand.Parameters.AddWithValue("@Gender", GetGender().ToString());
+                    updateCommand.Parameters.AddWithValue("@BirthDate", dBirthDate.Value.Date);
+                    updateCommand.Parameters.AddWithValue("@PhoneNo1", txtPhoneNo1.Text);
+                    updateCommand.Parameters.AddWithValue("@PhoneNo2", txtPhoneNo2.Text);
+                    updateCommand.Parameters.AddWithValue("@Address", rtxtAddress.Text);
+                    updateCommand.Parameters.AddWithValue("@StaffId", txtStaffNo.Text);
+                    updateCommand.Parameters.AddWithValue("@Password", pPass);
+                    int result = DB.executeQuery(updateCommand);
+                    if (result == 1)
+                    {
+                        this.Hide();
+                        StaffList sl = new StaffList();
+                        sl.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to Update Staff");
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("" + ex);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Someting Wrong", "Error!");
+            }
+        }
+
+        private void dBirthDate_ValueChanged(object sender, EventArgs e)
+        {
+            if (dBirthDate.Value != DateTime.MinValue)
+            {
+                dBirthDate.CustomFormat = "dd / MM / yyyy";
+                int age = DateTime.Today.Year - dBirthDate.Value.Year;
+                if (dBirthDate.Value.Date > DateTime.Today.AddYears(-age))
+                    age--;
+
+                txtAge.Text = age.ToString();
+
+            }
+            else
+            {
+                dBirthDate.CustomFormat = "0 / 00 / 0000";
+                txtAge.Text = "";
+            }
+        }
+
+        private void dJoinDate_ValueChanged(object sender, EventArgs e)
+        {
+            if (dJoinDate.Value != DateTime.MinValue)
+            {
+                dJoinDate.CustomFormat = "dd / MM / yyyy";
+            }
+            else
+            {
+                dJoinDate.CustomFormat = "0 / 00 / 0000";
             }
         }
 
@@ -349,11 +306,17 @@ namespace Tutorial03
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Register.name = "";
             this.Hide();
             Login lg = new Login();
             lg.Show();
+        }
 
+        private void btnGtSt_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StaffList sl = new StaffList();
+            sl.Show();
         }
     }
 }
+ 

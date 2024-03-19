@@ -1,42 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Csharp-ojt-tutorails\\Tutorial07\\",
+  "WorkspaceRootPath": "E:\\Csharp-ojt-tutorails\\Tutorial07\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial07\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|c:\\csharp-ojt-tutorails\\tutorial07\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|c:\\csharp-ojt-tutorails\\tutorial07\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|c:\\csharp-ojt-tutorails\\tutorial07\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|c:\\csharp-ojt-tutorails\\tutorial07\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial07\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\Tutorial07\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|c:\\csharp-ojt-tutorails\\tutorial07\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|e:\\csharp-ojt-tutorails\\tutorial07\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\Tutorial07\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\Tutorial07\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|e:\\csharp-ojt-tutorails\\tutorial07\\dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\Tutorial07\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial07\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|e:\\csharp-ojt-tutorails\\tutorial07\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\Tutorial07\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\Tutorial07\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial07\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|e:\\csharp-ojt-tutorails\\tutorial07\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\Tutorial07\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,8 +54,12 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -63,23 +75,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Aes.cs",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Aes.cs",
-              "RelativeDocumentMoniker": "Aes.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Aes.cs",
-              "RelativeToolTip": "Aes.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Title": "StaffInformation.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\StaffInformation.cs",
+              "RelativeDocumentMoniker": "StaffInformation.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\StaffInformation.cs",
+              "RelativeToolTip": "StaffInformation.cs",
+              "ViewState": "AQIAALoAAAAAAAAAAAAgwLsAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T10:41:05.942Z",
+              "WhenOpened": "2024-03-18T08:22:33.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Login.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Login.cs [Design]",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Login.cs [Design]",
               "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T10:12:54.574Z",
@@ -88,24 +100,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StaffInformation.cs [Design]",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffInformation.cs",
-              "RelativeDocumentMoniker": "StaffInformation.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffInformation.cs [Design]",
-              "RelativeToolTip": "StaffInformation.cs [Design]",
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAwA8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T09:40:51.379Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-19T00:31:32.503Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Login.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Login.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAcwD4AAAAVAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAuwDYAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T10:12:57.471Z",
               "EditorCaption": ""
@@ -113,23 +126,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StaffInformation.cs",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffInformation.cs",
-              "RelativeDocumentMoniker": "StaffInformation.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffInformation.cs",
-              "RelativeToolTip": "StaffInformation.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAA3wHgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:22:33.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Register.cs [Design]",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Register.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Register.cs",
               "RelativeDocumentMoniker": "Register.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Register.cs [Design]",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Register.cs [Design]",
               "RelativeToolTip": "Register.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T09:16:14.641Z",
@@ -137,41 +137,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "DBAccess.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\DBAccess.cs",
+              "RelativeDocumentMoniker": "DBAccess.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\DBAccess.cs",
+              "RelativeToolTip": "DBAccess.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T00:56:38.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffInformation.cs [Design]",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\StaffInformation.cs",
+              "RelativeDocumentMoniker": "StaffInformation.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\StaffInformation.cs [Design]",
+              "RelativeToolTip": "StaffInformation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T00:31:06.893Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Register.cs",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Register.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Register.cs",
               "RelativeDocumentMoniker": "Register.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\Register.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Register.cs",
               "RelativeToolTip": "Register.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAALIAAABBAAAA",
+              "ViewState": "AQIAALwAAAAAAAAAAAAuwKEAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T07:54:17.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "StaffList.cs",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs",
               "RelativeDocumentMoniker": "StaffList.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs",
               "RelativeToolTip": "StaffList.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAH4AAAAJAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAowKwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T07:41:54.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "StaffList.cs [Design]",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs",
               "RelativeDocumentMoniker": "StaffList.cs",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs [Design]",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs [Design]",
               "RelativeToolTip": "StaffList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T05:49:59.911Z",
+              "WhenOpened": "2024-03-18T15:53:33.806Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Aes.cs",
+              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Aes.cs",
+              "RelativeDocumentMoniker": "Aes.cs",
+              "ToolTip": "E:\\Csharp-ojt-tutorails\\Tutorial07\\Aes.cs",
+              "RelativeToolTip": "Aes.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAswC0AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T10:41:05.942Z"
             }
           ]
         }

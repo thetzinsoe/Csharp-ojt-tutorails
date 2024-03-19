@@ -19,7 +19,7 @@ namespace Tutorial04
         DBAccess DB = new DBAccess();
         DataTable userTable = new DataTable();
         EncryptionHelper EncryptionHelper = new EncryptionHelper();
-        public static string name="";
+        string username="";
        
         public Login()
         {
@@ -41,8 +41,8 @@ namespace Tutorial04
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            name = txtUsername.Text;
-            string username = txtUsername.Text;
+           
+            username = txtUsername.Text;
             string password = txtPassword.Text;
             bool LoginAuth = false;
             string query = "SELECT * FROM Tuto07 WHERE Name='" + username + "'";
@@ -53,7 +53,6 @@ namespace Tutorial04
                 {
                     string dbPass = (string)(row["Password"]);
                     string dcPass = EncryptionHelper.Decrypt(dbPass);
-                    //MessageBox.Show(dcPass + "");
                     if (dcPass == txtPassword.Text)
                     {
                         errorProviderLg.SetError(txtPassword, "");
@@ -74,7 +73,7 @@ namespace Tutorial04
             if (LoginAuth)
             {
                 this.Hide();
-                StaffInformation staffInformation = new StaffInformation();
+                StaffInformation staffInformation = new StaffInformation(username);
                 staffInformation.Show();
             }
         }

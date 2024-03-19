@@ -21,7 +21,7 @@ namespace Tutorial04
 {
     public partial class Register : Form
     {
-        public static string name = "";
+        string username = "";
         string imagePath = "";
         byte[] imageData = new byte[0];
         byte[] noImage = File.ReadAllBytes(Environment.CurrentDirectory + "\\Images\\noImage.png");
@@ -158,15 +158,15 @@ namespace Tutorial04
             }
 
             DataTable userTable = new DataTable();
-            name = txtStaffName.Text;
-            string findUser = "SELECT * FROM UserTable WHERE Name='" + name + "'";
+            username = txtStaffName.Text;
+            string findUser = "SELECT * FROM Tuto07 WHERE Name='" + username + "'";
             DB.readDatathroughAdapter(findUser, userTable);
 
             if (userTable.Rows.Count > 0)
             {
                 foreach (DataRow row in userTable.Rows)
                 {
-                    if (row["Name"].ToString() == name)
+                    if (row["Name"].ToString() == username)
                     {
                         //MessageBox.Show("Name already exists: " + row["Name"]);
                         errorProviderCommon.SetError(txtStaffName, "This Name is already created!");
@@ -188,7 +188,8 @@ namespace Tutorial04
 
             if (!errorsPresent)
             {
-                string pass = EncryptionHelper.Encrypt(txtPassword.Text);
+                string pPass = txtPassword.Text.ToString();
+                string pass = EncryptionHelper.Encrypt(pPass);
                 SqlCommand insertCommand = new SqlCommand("INSERT INTO Tuto07 (Image,Name,JoinFrom,StaffType,NrcNo,Gender,BirthDate,PhoneNo1,PhoneNo2,Address,Password) VALUES (@Image,@Name,@JoinFrom,@StaffType,@NrcNo,@Gender,@BirthDate,@PhoneNo1,@PhoneNo2,@Address,@Password)");
                 insertCommand.Parameters.AddWithValue("@Name", txtStaffName.Text);
                 insertCommand.Parameters.AddWithValue("@Image", imagePath);
@@ -207,7 +208,7 @@ namespace Tutorial04
                     MessageBox.Show("Register Success");
                     clear();
                     this.Hide();
-                    StaffInformation staffInformation = new StaffInformation();
+                    StaffInformation staffInformation = new StaffInformation(username);
                     staffInformation.Show();
                 }
                 else
