@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,40 +70,45 @@ namespace Tutorial04
 
             if (reader.HasRows)
             {
-                staffDataTable.Clear(); // Clear existing data
-                while (reader.Read())
-                {
-                    DataRow newRow = staffDataTable.NewRow();
-                    newRow["Staff No."] = reader.GetInt32(0);
-                    imagePath = reader.GetString(1);
-                    if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
-                    {
-                        imageData = File.ReadAllBytes(imagePath);
-                        newRow["Image"] = imageData;
-                    }
-                    else
-                    {
-                        newRow["Image"] = noImage;
-                    }
-                    newRow["Staff Name"] = reader.GetString(2);
-                    newRow["Join From"] = reader.GetDateTime(3).Date;
-                    newRow["Staff Type"] = reader.GetString(4);
-                    newRow["NRC No"] = reader.GetString(5);
-                    newRow["Gender"] = reader.GetString(6);
-                    newRow["Age"] = (DateTime.Today.Year - reader.GetDateTime(10).Year).ToString();
-                    newRow["Phone No1"] = reader.GetInt32(7);
-                    newRow["Phone No2"] = reader.GetInt32(8);
-                    newRow["Address"] = reader.GetString(9);
-                    staffDataTable.Rows.Add(newRow);
-                }
-                DataGridViewRow selectedRow = dgvStaffInformation.Rows[0];
-                var selectedCell = selectedRow.Cells[2].Value; // Assuming the staffName is in the second column (index 1)
-                staffName = Convert.ToString(selectedCell);
-              
-                 //   dgvStaffInformation.Rows[0].Selected = false; // Deselect the first row
-                
+                BindData(reader);
             }
             reader.Close();
+        }
+
+        private void BindData(SqlDataReader reader)
+        {
+            staffDataTable.Clear(); // Clear existing data
+            while (reader.Read())
+            {
+                DataRow newRow = staffDataTable.NewRow();
+                newRow["Staff No."] = reader.GetInt32(0);
+                imagePath = reader.GetString(1);
+                if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
+                {
+                    imageData = File.ReadAllBytes(imagePath);
+                    newRow["Image"] = imageData;
+                }
+                else
+                {
+                    newRow["Image"] = noImage;
+                }
+                newRow["Staff Name"] = reader.GetString(2);
+                newRow["Join From"] = reader.GetDateTime(3).Date;
+                newRow["Staff Type"] = reader.GetString(4);
+                newRow["NRC No"] = reader.GetString(5);
+                newRow["Gender"] = reader.GetString(6);
+                newRow["Age"] = (DateTime.Today.Year - reader.GetDateTime(10).Year).ToString();
+                newRow["Phone No1"] = reader.GetInt32(7);
+                newRow["Phone No2"] = reader.GetInt32(8);
+                newRow["Address"] = reader.GetString(9);
+                staffDataTable.Rows.Add(newRow);
+            }
+            DataGridViewRow selectedRow = dgvStaffInformation.Rows[0];
+            var selectedCell = selectedRow.Cells[2].Value; // Assuming the staffName is in the second column (index 1)
+            staffName = Convert.ToString(selectedCell);
+
+            //   dgvStaffInformation.Rows[0].Selected = false; // Deselect the first row
+
         }
 
 
@@ -180,6 +186,29 @@ namespace Tutorial04
                 DataGridViewRow selectedRow = dgvStaffInformation.Rows[e.RowIndex];
                 var selectedCell = selectedRow.Cells[2].Value; // Assuming the staffName is in the second column (index 1)
                 staffName = Convert.ToString(selectedCell);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSearch.Text))
+            {
+                string sql = "Select * from Tuto07 WHERE Name LIKE '%" + txtSearch.Text + "%'";
+                SqlDataReader reader = DB.readDatathroughReader(sql);
+                BindData(reader);
+                reader.Close();
+            }
+            else
+            {
+                LoadData();
+            }
+        }
+
+        private void SearchBox_TextChange(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSearch.Text))
+            {
+                LoadData();
             }
         }
     }
