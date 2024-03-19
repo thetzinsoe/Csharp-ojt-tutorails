@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|c:\\csharp-ojt-tutorails\\tutorial07\\dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial07\\dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -74,8 +74,7 @@
               "RelativeToolTip": "DBAccess.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T03:44:50.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T03:44:50.476Z"
             },
             {
               "$type": "Document",
@@ -170,8 +169,7 @@
               "RelativeToolTip": "StaffList.cs",
               "ViewState": "AQIAALEAAAAAAAAAAAAAANMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T07:41:54.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T07:41:54.078Z"
             },
             {
               "$type": "Document",
@@ -182,8 +180,7 @@
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial07\\StaffList.cs [Design]",
               "RelativeToolTip": "StaffList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T05:49:59.911Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-18T05:49:59.911Z"
             }
           ]
         }
