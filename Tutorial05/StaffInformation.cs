@@ -499,8 +499,8 @@ namespace Tutorial03
                     newRow["Join From"] = reader.GetDateTime(3).Date;
                     newRow["Staff Type"] = reader.GetString(4);
                     newRow["NRC No"] = reader.GetString(5);
-                    newRow["Gender"] = reader.GetString(10);
-                    newRow["Age"] = (DateTime.Today.Year - reader.GetDateTime(6).Year).ToString();
+                    newRow["Gender"] = reader.GetString(6);
+                    newRow["Age"] = (DateTime.Today.Year - reader.GetDateTime(10).Year).ToString();
                     newRow["Phone No1"] = reader.GetInt32(7);
                     newRow["Phone No2"] = reader.GetInt32(8);
                     newRow["Address"] = reader.GetString(9);
