@@ -1,26 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Csharp-ojt-tutorails\\DataGridView\\",
+  "WorkspaceRootPath": "C:\\Csharp-ojt-tutorails\\Tutorial04\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\DataGridView\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|c:\\csharp-ojt-tutorails\\tutorial04\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|e:\\csharp-ojt-tutorails\\datagridview\\dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial04\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|e:\\csharp-ojt-tutorails\\tutorial04\\dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> 179a3309d57f2e63fb4228bfe5eeab8937efe0c3
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial04\\dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:dbaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 762cdb356f77a55dadd36e3e721275b171247efa
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|E:\\Csharp-ojt-tutorails\\DataGridView\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|C:\\Csharp-ojt-tutorails\\Tutorial04\\staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{94374B85-D9E4-4B96-A677-6B1E3F9DC85C}|Tutorial04.csproj|solutionrelative:staffinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -31,12 +22,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -53,45 +40,38 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "StaffInformation.cs [Design]",
-              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\DataGridView\\StaffInformation.cs",
+              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial04\\StaffInformation.cs",
               "RelativeDocumentMoniker": "StaffInformation.cs",
-              "ToolTip": "E:\\Csharp-ojt-tutorails\\DataGridView\\StaffInformation.cs [Design]",
+              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial04\\StaffInformation.cs [Design]",
               "RelativeToolTip": "StaffInformation.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T09:37:25.9Z",
+              "WhenOpened": "2024-03-20T03:23:16.061Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "DBAccess.cs",
-              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\DataGridView\\DBAccess.cs",
+              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial04\\DBAccess.cs",
               "RelativeDocumentMoniker": "DBAccess.cs",
-              "ToolTip": "E:\\Csharp-ojt-tutorails\\DataGridView\\DBAccess.cs",
+              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial04\\DBAccess.cs",
               "RelativeToolTip": "DBAccess.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAuwFcAAAA3AAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAiwBEAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T04:35:00.12Z"
+              "WhenOpened": "2024-03-20T03:23:16.062Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "StaffInformation.cs",
-              "DocumentMoniker": "E:\\Csharp-ojt-tutorails\\DataGridView\\StaffInformation.cs",
+              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial04\\StaffInformation.cs",
               "RelativeDocumentMoniker": "StaffInformation.cs",
-              "ToolTip": "E:\\Csharp-ojt-tutorails\\DataGridView\\StaffInformation.cs",
+              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial04\\StaffInformation.cs",
               "RelativeToolTip": "StaffInformation.cs",
-<<<<<<< HEAD
-              "ViewState": "AQIAAHEBAAAAAAAAAAAywLYBAABBAAAA",
-=======
-<<<<<<< HEAD
-              "ViewState": "AQIAAKcAAAAAAAAAAAA1wPIAAAA2AAAA",
-=======
-              "ViewState": "AQIAAJwAAAAAAAAAAAAcwKoAAABXAAAA",
->>>>>>> 762cdb356f77a55dadd36e3e721275b171247efa
->>>>>>> 179a3309d57f2e63fb4228bfe5eeab8937efe0c3
+              "ViewState": "AQIAAMIBAAAAAAAAAAAjwNwBAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T09:16:49.766Z",
+              "WhenOpened": "2024-03-20T03:23:16.068Z",
               "EditorCaption": ""
             }
           ]
