@@ -1,0 +1,12 @@
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\bin\Debug\Tutorial09(linq).exe.config
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\bin\Debug\Tutorial09(linq).exe
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\bin\Debug\Tutorial09(linq).pdb
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09(linq).csproj.AssemblyReference.cache
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09_linq_.Login.resources
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09_linq_.Properties.Resources.resources
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09_linq_.Register.resources
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09_linq_.StaffList.resources
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09(linq).csproj.GenerateResource.cache
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09(linq).csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09(linq).exe
+C:\Csharp-ojt-tutorails\Tutorial09(linq)\obj\Debug\Tutorial09(linq).pdb

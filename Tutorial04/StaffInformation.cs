@@ -256,7 +256,8 @@ namespace Tutorial03
                     {
                         int staffId = 0;
                         var firstCellValue = txtStaffNo.Text;
-                        staffId = Convert.ToInt32(firstCellValue);SqlCommand updateCommand = new SqlCommand("UPDATE StaffInformation SET Image=@Image, Name=@Name, JoinFrom=@JoinFrom, StaffType=@StaffType, NrcNo=@NrcNo, Gender=@Gender, BirthDate=@BirthDate, PhoneNo1=@PhoneNo1, PhoneNo2=@PhoneNo2, Address=@Address WHERE Id="+staffId);
+                        staffId = Convert.ToInt32(firstCellValue);
+                        SqlCommand updateCommand = new SqlCommand("UPDATE StaffInformation SET Image=@Image, Name=@Name, JoinFrom=@JoinFrom, StaffType=@StaffType, NrcNo=@NrcNo, Gender=@Gender, BirthDate=@BirthDate, PhoneNo1=@PhoneNo1, PhoneNo2=@PhoneNo2, Address=@Address WHERE Id="+staffId);
 
                         // Bind parameters
                         updateCommand.Parameters.AddWithValue("@Image", imagePath);

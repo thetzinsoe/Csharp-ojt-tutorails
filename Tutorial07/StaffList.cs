@@ -52,8 +52,8 @@ namespace Tutorial04
             imgColumn.HeaderText = "Image";
             imgColumn.DataPropertyName = "Image";
             imgColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgvStaffInformation.Columns.Add(imgColumn);
-            dgvStaffInformation.DataSource = staffDataTable;
+            dgvStaffInformation.Columns.Add(imgColumn);      
+            dgvStaffInformation.DataSource = staffDataTable;     
             LoadData();
         }
 
