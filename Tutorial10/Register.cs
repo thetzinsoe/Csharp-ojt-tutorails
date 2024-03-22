@@ -148,6 +148,21 @@ namespace Tutorial09_linq_
                 errorProviderCommon.SetError(txtStaffName, "");
             }
 
+            string email = txtEmail.Text.Trim();
+
+            if (string.IsNullOrEmpty(email))
+            {
+                errorProviderCommon.SetError(txtEmail, "Email address is required.");
+            }
+            else if (!Regex.IsMatch(email, @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"))
+            {
+                errorProviderCommon.SetError(txtEmail, "Invalid email address.");
+            }
+            else
+            {
+                errorProviderCommon.SetError(txtEmail, "");
+            }
+
             if (dJoinDate.Value == dJoinDate.MinDate)
             {
                 errorProviderCommon.SetError(dJoinDate, "Join Date cannot be empty.");
@@ -230,6 +245,7 @@ namespace Tutorial09_linq_
             if (!errorsPresent)
             {
                 string  staffName = txtStaffName.Text.ToString();
+                string  staffEmail = txtEmail.Text.ToString();
                 string image = imagePath;
                 DateTime joinFrom = dJoinDate.Value.Date;
                 DateTime birthDate = dBirthDate.Value.Date;
@@ -248,9 +264,10 @@ namespace Tutorial09_linq_
                 {
                     try
                     {
-                        var st = new Tuto0
+                        var st = new Tuto10
                         {
                             Image = image,
+                            Email = staffEmail,
                             Name = staffName,
                             JoinFrom = joinFrom,
                             BirthDate = birthDate,
@@ -286,6 +303,7 @@ namespace Tutorial09_linq_
                               select s).First();
                     dt.Image = image;
                     dt.Name = staffName;
+                    dt.Email = staffEmail;
                     dt.JoinFrom = joinFrom;
                     dt.BirthDate = birthDate;
                     dt.StaffType = staffType;
@@ -377,9 +395,17 @@ namespace Tutorial09_linq_
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            StaffList st = new StaffList();
-            st.Show();
+            if (btnRegister.Text == "Register")
+            {
+                Close();
+            }
+            else
+            {
+                this.Hide();
+                StaffList st = new StaffList();
+                st.Show();
+            }
+           
         }
     }
 }

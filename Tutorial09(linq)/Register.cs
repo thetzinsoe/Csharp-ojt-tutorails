@@ -377,9 +377,16 @@ namespace Tutorial09_linq_
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            StaffList st = new StaffList();
-            st.Show();
+            if (btnRegister.Text == "Register")
+            {
+                Close();
+            }
+            else
+            {
+                this.Hide();
+                StaffList st = new StaffList();
+                st.Show();
+            }
         }
     }
 }

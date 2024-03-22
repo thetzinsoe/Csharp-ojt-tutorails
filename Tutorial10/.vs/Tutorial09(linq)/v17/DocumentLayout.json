@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "C:\\Csharp-ojt-tutorails\\Tutorial10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|c:\\csharp-ojt-tutorails\\tutorial10\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|c:\\csharp-ojt-tutorails\\tutorial10\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|c:\\csharp-ojt-tutorails\\tutorial10\\staffdata.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
-      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:staffdata.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +48,7 @@
         },
         {
           "DockedWidth": 414,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -76,32 +72,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StaffData.dbml",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\StaffData.dbml",
-              "RelativeDocumentMoniker": "StaffData.dbml",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\StaffData.dbml",
-              "RelativeToolTip": "StaffData.dbml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2024-03-22T05:48:03.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Register.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Register.cs",
               "RelativeDocumentMoniker": "Register.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Register.cs",
               "RelativeToolTip": "Register.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAgwDgAAAArAAAA",
+              "ViewState": "AQIAAEMBAAAAAAAAAAAewJMBAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T03:42:59.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StaffList.cs [Design]",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\StaffList.cs",
               "RelativeDocumentMoniker": "StaffList.cs",
@@ -113,20 +97,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAiAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAA0wCYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T07:51:13.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
@@ -138,20 +122,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "StaffList.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\StaffList.cs",
               "RelativeDocumentMoniker": "StaffList.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\StaffList.cs",
               "RelativeToolTip": "StaffList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAD4v4gAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T07:16:27.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Aes.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Aes.cs",
               "RelativeDocumentMoniker": "Aes.cs",
@@ -159,11 +143,12 @@
               "RelativeToolTip": "Aes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T04:16:25.195Z"
+              "WhenOpened": "2024-03-21T04:16:25.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Register.cs [Design]",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Register.cs",
               "RelativeDocumentMoniker": "Register.cs",

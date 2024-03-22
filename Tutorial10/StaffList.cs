@@ -38,6 +38,7 @@ namespace Tutorial09_linq_
             dataTable.Columns.Add("Staff No.", typeof(int));
             dataTable.Columns.Add("Image", typeof(byte[])); // Use dataTable here, not staffDataTable
             dataTable.Columns.Add("Staff Name", typeof(string));
+            dataTable.Columns.Add("Staff Email", typeof(string));
             dataTable.Columns.Add("Join From", typeof(DateTime));
             dataTable.Columns.Add("Staff Type", typeof(string));
             dataTable.Columns.Add("NRC No", typeof(string));
@@ -54,6 +55,7 @@ namespace Tutorial09_linq_
                          StaffNo = s.Id,
                          Image = s.Image,
                          StaffName = s.Name,
+                         Email = s.Email,
                          JoinFrom = s.JoinFrom,
                          StaffType = s.StaffType,
                          NRCNo = s.NrcNo,
@@ -79,6 +81,7 @@ namespace Tutorial09_linq_
                     newRow["Image"] = noImage;
                 }
                 newRow["Staff Name"] = item.StaffName;
+                newRow["Staff Email"] = item.Email;
                 newRow["Join From"] = item.JoinFrom;
                 newRow["Staff Type"] = item.StaffType;
                 newRow["NRC No"] = item.NRCNo;
@@ -123,16 +126,22 @@ namespace Tutorial09_linq_
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            DataGridViewRow selectedRow = dgvStaffInformation.SelectedRows[0];
-            var selectedCell = selectedRow.Cells[2].Value; // Assuming the staffName is in the second column (index 1)
-            staffName = Convert.ToString(selectedCell);
-            var dt = (from s in DB.Tuto10s
-                      where s.Name == staffName
-                      select s).First();
-            this.Hide();
-            Register re = new Register(dt);
-            re.Show();
-
+            if (dgvStaffInformation.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvStaffInformation.SelectedRows[0];
+                var selectedCell = selectedRow.Cells[2].Value; // Assuming the staffName is in the second column (index 1)
+                staffName = Convert.ToString(selectedCell);
+                var dt = (from s in DB.Tuto10s
+                          where s.Name == staffName
+                          select s).First();
+                this.Hide();
+                Register re = new Register(dt);
+                re.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please select Staff to Update!");
+            }
         }
 
         private void dgvStaffInformation_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

@@ -123,15 +123,22 @@ namespace Tutorial09_linq_
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            DataGridViewRow selectedRow = dgvStaffInformation.SelectedRows[0];
-            var selectedCell = selectedRow.Cells[2].Value; // Assuming the staffName is in the second column (index 1)
-            staffName = Convert.ToString(selectedCell);
-            var dt = (from s in DB.Tuto07s
-                      where s.Name == staffName
-                      select s).First();
-            this.Hide();
-            Register re = new Register(dt);
-            re.Show();
+            if (dgvStaffInformation.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvStaffInformation.SelectedRows[0];
+                var selectedCell = selectedRow.Cells[2].Value; // Assuming the staffName is in the second column (index 1)
+                staffName = Convert.ToString(selectedCell);
+                var dt = (from s in DB.Tuto07s
+                          where s.Name == staffName
+                          select s).First();
+                this.Hide();
+                Register re = new Register(dt);
+                re.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please select Staff to Update!");
+            }
 
         }
 

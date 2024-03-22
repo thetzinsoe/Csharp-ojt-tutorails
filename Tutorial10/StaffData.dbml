@@ -2,7 +2,7 @@
   <Connection Mode="AppSettings" ConnectionString="Data Source=WIN-5A5VVJAO3DF\SQLEXPRESS01;Initial Catalog=Tutorial04;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="Tutorial09_linq_.Properties.Settings" SettingsPropertyName="Tutorial04ConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Tuto10" Member="Tuto10s">
     <Type Name="Tuto10">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Image" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />

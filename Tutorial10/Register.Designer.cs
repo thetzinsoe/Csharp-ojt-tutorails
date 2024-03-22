@@ -66,6 +66,8 @@
             this.txtNrcNo = new System.Windows.Forms.TextBox();
             this.errorProviderCommon = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnCancel = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbStaffPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderCommon)).BeginInit();
             this.SuspendLayout();
@@ -94,7 +96,7 @@
             // pbStaffPhoto
             // 
             this.pbStaffPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStaffPhoto.Location = new System.Drawing.Point(516, 280);
+            this.pbStaffPhoto.Location = new System.Drawing.Point(517, 310);
             this.pbStaffPhoto.Name = "pbStaffPhoto";
             this.pbStaffPhoto.Size = new System.Drawing.Size(86, 79);
             this.pbStaffPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -104,7 +106,7 @@
             // btnChooseFile
             // 
             this.btnChooseFile.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnChooseFile.Location = new System.Drawing.Point(618, 280);
+            this.btnChooseFile.Location = new System.Drawing.Point(619, 310);
             this.btnChooseFile.Name = "btnChooseFile";
             this.btnChooseFile.Size = new System.Drawing.Size(136, 35);
             this.btnChooseFile.TabIndex = 3;
@@ -116,7 +118,7 @@
             // 
             this.rdOther.AutoSize = true;
             this.rdOther.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.rdOther.Location = new System.Drawing.Point(516, 124);
+            this.rdOther.Location = new System.Drawing.Point(517, 167);
             this.rdOther.Name = "rdOther";
             this.rdOther.Size = new System.Drawing.Size(74, 23);
             this.rdOther.TabIndex = 4;
@@ -127,7 +129,7 @@
             // rtxtAddress
             // 
             this.rtxtAddress.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.rtxtAddress.Location = new System.Drawing.Point(516, 383);
+            this.rtxtAddress.Location = new System.Drawing.Point(517, 413);
             this.rtxtAddress.Name = "rtxtAddress";
             this.rtxtAddress.Size = new System.Drawing.Size(177, 96);
             this.rtxtAddress.TabIndex = 5;
@@ -221,7 +223,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(399, 128);
+            this.label7.Location = new System.Drawing.Point(400, 171);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 19);
             this.label7.TabIndex = 16;
@@ -230,7 +232,7 @@
             // txtPhoneNo1
             // 
             this.txtPhoneNo1.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtPhoneNo1.Location = new System.Drawing.Point(516, 178);
+            this.txtPhoneNo1.Location = new System.Drawing.Point(517, 208);
             this.txtPhoneNo1.Name = "txtPhoneNo1";
             this.txtPhoneNo1.Size = new System.Drawing.Size(177, 26);
             this.txtPhoneNo1.TabIndex = 15;
@@ -239,7 +241,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label8.Location = new System.Drawing.Point(399, 184);
+            this.label8.Location = new System.Drawing.Point(400, 214);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 19);
             this.label8.TabIndex = 18;
@@ -248,7 +250,7 @@
             // txtPhoneNo2
             // 
             this.txtPhoneNo2.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtPhoneNo2.Location = new System.Drawing.Point(516, 225);
+            this.txtPhoneNo2.Location = new System.Drawing.Point(517, 255);
             this.txtPhoneNo2.Name = "txtPhoneNo2";
             this.txtPhoneNo2.Size = new System.Drawing.Size(177, 26);
             this.txtPhoneNo2.TabIndex = 17;
@@ -277,7 +279,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label11.Location = new System.Drawing.Point(397, 89);
+            this.label11.Location = new System.Drawing.Point(398, 128);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(77, 19);
             this.label11.TabIndex = 21;
@@ -287,7 +289,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label12.Location = new System.Drawing.Point(399, 228);
+            this.label12.Location = new System.Drawing.Point(400, 258);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(99, 19);
             this.label12.TabIndex = 22;
@@ -297,7 +299,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label13.Location = new System.Drawing.Point(399, 280);
+            this.label13.Location = new System.Drawing.Point(400, 310);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(56, 19);
             this.label13.TabIndex = 23;
@@ -317,7 +319,7 @@
             // 
             this.rdMale.AutoSize = true;
             this.rdMale.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.rdMale.Location = new System.Drawing.Point(596, 124);
+            this.rdMale.Location = new System.Drawing.Point(597, 167);
             this.rdMale.Name = "rdMale";
             this.rdMale.Size = new System.Drawing.Size(64, 23);
             this.rdMale.TabIndex = 25;
@@ -329,7 +331,7 @@
             // 
             this.rdfemale.AutoSize = true;
             this.rdfemale.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.rdfemale.Location = new System.Drawing.Point(670, 124);
+            this.rdfemale.Location = new System.Drawing.Point(671, 167);
             this.rdfemale.Name = "rdfemale";
             this.rdfemale.Size = new System.Drawing.Size(84, 23);
             this.rdfemale.TabIndex = 26;
@@ -370,7 +372,7 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnRegister.Location = new System.Drawing.Point(525, 520);
+            this.btnRegister.Location = new System.Drawing.Point(525, 524);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(135, 30);
             this.btnRegister.TabIndex = 30;
@@ -381,7 +383,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnClear.Location = new System.Drawing.Point(364, 520);
+            this.btnClear.Location = new System.Drawing.Point(364, 524);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(135, 30);
             this.btnClear.TabIndex = 31;
@@ -406,7 +408,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label16.Location = new System.Drawing.Point(399, 378);
+            this.label16.Location = new System.Drawing.Point(400, 408);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(74, 19);
             this.label16.TabIndex = 33;
@@ -415,7 +417,7 @@
             // txtNrcNo
             // 
             this.txtNrcNo.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtNrcNo.Location = new System.Drawing.Point(516, 78);
+            this.txtNrcNo.Location = new System.Drawing.Point(517, 117);
             this.txtNrcNo.Name = "txtNrcNo";
             this.txtNrcNo.Size = new System.Drawing.Size(177, 26);
             this.txtNrcNo.TabIndex = 34;
@@ -427,7 +429,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnCancel.Location = new System.Drawing.Point(203, 520);
+            this.btnCancel.Location = new System.Drawing.Point(203, 524);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(135, 30);
             this.btnCancel.TabIndex = 35;
@@ -435,11 +437,31 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.Location = new System.Drawing.Point(395, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 19);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Email";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtEmail.Location = new System.Drawing.Point(517, 78);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(177, 26);
+            this.txtEmail.TabIndex = 36;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 576);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtNrcNo);
             this.Controls.Add(this.label16);
@@ -525,6 +547,8 @@
         private System.Windows.Forms.TextBox txtNrcNo;
         private System.Windows.Forms.ErrorProvider errorProviderCommon;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtEmail;
     }
 }
 

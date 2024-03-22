@@ -30,6 +30,9 @@ namespace Tutorial09_linq_
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
+    partial void InsertTuto10(Tuto10 instance);
+    partial void UpdateTuto10(Tuto10 instance);
+    partial void DeleteTuto10(Tuto10 instance);
     #endregion
 		
 		public StaffDataDataContext() : 
@@ -72,8 +75,10 @@ namespace Tutorial09_linq_
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Tuto10")]
-	public partial class Tuto10
+	public partial class Tuto10 : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _Id;
 		
@@ -101,11 +106,44 @@ namespace Tutorial09_linq_
 		
 		private string _Password;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnImageChanging(string value);
+    partial void OnImageChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnEmailChanging(string value);
+    partial void OnEmailChanged();
+    partial void OnJoinFromChanging(System.DateTime value);
+    partial void OnJoinFromChanged();
+    partial void OnStaffTypeChanging(string value);
+    partial void OnStaffTypeChanged();
+    partial void OnNrcNoChanging(string value);
+    partial void OnNrcNoChanged();
+    partial void OnGenderChanging(string value);
+    partial void OnGenderChanged();
+    partial void OnPhoneNo1Changing(int value);
+    partial void OnPhoneNo1Changed();
+    partial void OnPhoneNo2Changing(System.Nullable<int> value);
+    partial void OnPhoneNo2Changed();
+    partial void OnAddressChanging(string value);
+    partial void OnAddressChanged();
+    partial void OnBirthDateChanging(System.DateTime value);
+    partial void OnBirthDateChanged();
+    partial void OnPasswordChanging(string value);
+    partial void OnPasswordChanged();
+    #endregion
+		
 		public Tuto10()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int Id
 		{
 			get
@@ -116,7 +154,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._Id != value))
 				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
 					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
 				}
 			}
 		}
@@ -132,7 +174,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._Image != value))
 				{
+					this.OnImageChanging(value);
+					this.SendPropertyChanging();
 					this._Image = value;
+					this.SendPropertyChanged("Image");
+					this.OnImageChanged();
 				}
 			}
 		}
@@ -148,7 +194,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._Name != value))
 				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
 					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
 				}
 			}
 		}
@@ -164,7 +214,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._Email != value))
 				{
+					this.OnEmailChanging(value);
+					this.SendPropertyChanging();
 					this._Email = value;
+					this.SendPropertyChanged("Email");
+					this.OnEmailChanged();
 				}
 			}
 		}
@@ -180,7 +234,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._JoinFrom != value))
 				{
+					this.OnJoinFromChanging(value);
+					this.SendPropertyChanging();
 					this._JoinFrom = value;
+					this.SendPropertyChanged("JoinFrom");
+					this.OnJoinFromChanged();
 				}
 			}
 		}
@@ -196,7 +254,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._StaffType != value))
 				{
+					this.OnStaffTypeChanging(value);
+					this.SendPropertyChanging();
 					this._StaffType = value;
+					this.SendPropertyChanged("StaffType");
+					this.OnStaffTypeChanged();
 				}
 			}
 		}
@@ -212,7 +274,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._NrcNo != value))
 				{
+					this.OnNrcNoChanging(value);
+					this.SendPropertyChanging();
 					this._NrcNo = value;
+					this.SendPropertyChanged("NrcNo");
+					this.OnNrcNoChanged();
 				}
 			}
 		}
@@ -228,7 +294,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._Gender != value))
 				{
+					this.OnGenderChanging(value);
+					this.SendPropertyChanging();
 					this._Gender = value;
+					this.SendPropertyChanged("Gender");
+					this.OnGenderChanged();
 				}
 			}
 		}
@@ -244,7 +314,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._PhoneNo1 != value))
 				{
+					this.OnPhoneNo1Changing(value);
+					this.SendPropertyChanging();
 					this._PhoneNo1 = value;
+					this.SendPropertyChanged("PhoneNo1");
+					this.OnPhoneNo1Changed();
 				}
 			}
 		}
@@ -260,7 +334,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._PhoneNo2 != value))
 				{
+					this.OnPhoneNo2Changing(value);
+					this.SendPropertyChanging();
 					this._PhoneNo2 = value;
+					this.SendPropertyChanged("PhoneNo2");
+					this.OnPhoneNo2Changed();
 				}
 			}
 		}
@@ -276,7 +354,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._Address != value))
 				{
+					this.OnAddressChanging(value);
+					this.SendPropertyChanging();
 					this._Address = value;
+					this.SendPropertyChanged("Address");
+					this.OnAddressChanged();
 				}
 			}
 		}
@@ -292,7 +374,11 @@ namespace Tutorial09_linq_
 			{
 				if ((this._BirthDate != value))
 				{
+					this.OnBirthDateChanging(value);
+					this.SendPropertyChanging();
 					this._BirthDate = value;
+					this.SendPropertyChanged("BirthDate");
+					this.OnBirthDateChanged();
 				}
 			}
 		}
@@ -308,8 +394,32 @@ namespace Tutorial09_linq_
 			{
 				if ((this._Password != value))
 				{
+					this.OnPasswordChanging(value);
+					this.SendPropertyChanging();
 					this._Password = value;
+					this.SendPropertyChanged("Password");
+					this.OnPasswordChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
