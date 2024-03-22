@@ -10,6 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net;
 
 namespace Tutorial09_linq_
 {
@@ -36,11 +37,82 @@ namespace Tutorial09_linq_
             dJoinDate.CustomFormat = "0 / 00 / 0000";
         }
 
+        public Register(Tuto07 data)
+        {
+            InitializeComponent();
+            txtStaffName.Select();
+            btnRegister.Text = "Update";
+            lbRegister.Text = "Update";
+            dBirthDate.MaxDate = DateTime.Now;
+            dBirthDate.Format = DateTimePickerFormat.Custom;
+            dBirthDate.CustomFormat = "0 / 00 / 0000";
+            txtAge.Text = "0";
+            dJoinDate.Value = dJoinDate.MinDate;
+            dJoinDate.MaxDate = DateTime.Now;
+            dJoinDate.Format = DateTimePickerFormat.Custom;
+            dJoinDate.CustomFormat = "0 / 00 / 0000";
+            LoadDataToUpdate(data);
+        }
+
+        public void LoadDataToUpdate(Tuto07 data)
+        {
+
+            txtStaffNo.Text = data.Id.ToString();
+            if (!string.IsNullOrEmpty(data.Image))
+            {
+                imagePath = data.Image;
+                if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
+                {
+                    pbStaffPhoto.Image = new Bitmap(imagePath);
+                }
+                else
+                {
+                    pbStaffPhoto.Image = new Bitmap(Path.Combine(Environment.CurrentDirectory, "Images", "noImage.png"));
+                }
+            }
+            else
+            {
+                pbStaffPhoto.Image = new Bitmap(Path.Combine(Environment.CurrentDirectory, "Images", "noImage.png"));
+            }
+
+            txtStaffName.Text = data.Name;
+            dJoinDate.Value = data.JoinFrom.Date;
+            cbStaffType.Text = data.StaffType;
+            txtNrcNo.Text = data.NrcNo;
+            dBirthDate.Value = data.BirthDate.Date;
+            txtAge.Text = (DateTime.Today.Year - data.BirthDate.Date.Year).ToString();
+            string gender = data.Gender;
+            switch (gender)
+            {
+                case "Male":
+                    rdMale.Checked = true;
+                    break;
+                case "Female":
+                    rdfemale.Checked = true;
+                    break;
+                case "Other":
+                    rdOther.Checked = true;
+                    break;
+                default:
+                    rdMale.Checked = false;
+                    rdfemale.Checked = false;
+                    rdOther.Checked = false;
+                    break;
+            }
+            txtPhoneNo1.Text = data.PhoneNo1.ToString();
+            txtPhoneNo2.Text = data.PhoneNo2.ToString();
+            rtxtAddress.Text = data.Address;
+            string ePass = data.Password;
+            string pPass = EncryptionHelper.Decrypt(ePass);
+            txtPassword.Text = pPass;
+            txtConfirmPassword.Text = pPass;
+        }
+
         private void label5_Click(object sender, EventArgs e)
         {
             this.Hide();
-           // Login lg = new Login();
-           // lg.Show();
+            Login lg = new Login();
+            lg.Show();
         }
 
         private void clear()
@@ -150,29 +222,6 @@ namespace Tutorial09_linq_
                 errorProviderCommon.SetError(txtPassword, "");
             }
 
-            //DataTable userTable = new DataTable();
-            //username = txtStaffName.Text;
-            //string findUser = "SELECT * FROM Tuto07 WHERE Name='" + username + "'";
-            //DB.readDatathroughAdapter(findUser, userTable);
-
-            //if (userTable.Rows.Count > 0)
-            //{
-            //    foreach (DataRow row in userTable.Rows)
-            //    {
-            //        if (row["Name"].ToString() == username)
-            //        {
-            //            MessageBox.Show("Name already exists: " + row["Name"]);
-            //            errorProviderCommon.SetError(txtStaffName, "This Name is already created!");
-            //            return;
-            //        }
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No matching records found.");
-            //    errorProviderCommon.SetError(txtStaffName, "");
-            //}
-
             bool errorsPresent = errorProviderCommon.ContainerControl.Controls
                 .OfType<Control>()
                 .Any(control => !string.IsNullOrEmpty(errorProviderCommon.GetError(control)));
@@ -195,33 +244,71 @@ namespace Tutorial09_linq_
                 }
                 string adderss = rtxtAddress.Text;
                 string password = EncryptionHelper.Encrypt(txtPassword.Text);
-                try
+                if (btnRegister.Text == "Register")
                 {
-                    var st = new Tuto07
+                    try
                     {
-                        Image = image,
-                        Name = staffName,
-                        JoinFrom = joinFrom,
-                        BirthDate = birthDate,
-                        StaffType = staffType,
-                        NrcNo = nrcNo,
-                        Gender = gender,
-                        PhoneNo1 = phoneNo1,
-                        PhoneNo2 = phoneNo2,
-                        Password = password,
-                    };
-                    DB.Tuto07s.InsertOnSubmit(st);
-                    DB.SubmitChanges();
-                    MessageBox.Show("Staff Adding successful");
-                    clear();
-                    this.Hide();
-                    StaffList staff = new StaffList();
-                    staff.Show();
-                    
-                }catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
+                        var st = new Tuto07
+                        {
+                            Image = image,
+                            Name = staffName,
+                            JoinFrom = joinFrom,
+                            BirthDate = birthDate,
+                            StaffType = staffType,
+                            NrcNo = nrcNo,
+                            Gender = gender,
+                            PhoneNo1 = phoneNo1,
+                            PhoneNo2 = phoneNo2,
+                            Password = password,
+                        };
+                        DB.Tuto07s.InsertOnSubmit(st);
+                        DB.SubmitChanges();
+                        MessageBox.Show("Staff Adding successful");
+                        clear();
+                        this.Hide();
+                        StaffList staff = new StaffList();
+                        staff.Show();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+
+
                 }
+                else
+                {
+                    int staffId = Convert.ToInt32(txtStaffNo.Text);
+                    var dt = (from s in DB.Tuto07s
+                              where s.Id == staffId
+                              select s).First();
+                    dt.Image = image;
+                    dt.Name = staffName;
+                    dt.JoinFrom = joinFrom;
+                    dt.BirthDate = birthDate;
+                    dt.StaffType = staffType;
+                    dt.NrcNo = nrcNo;
+                    dt.Gender = gender;
+                    dt.PhoneNo1 = phoneNo1;
+                    dt.PhoneNo2 = phoneNo2;
+                    dt.Password = password;
+                    try
+                    {
+                        DB.SubmitChanges();
+                        MessageBox.Show("Staff Update successful");
+                        clear();
+                        this.Hide();
+                        StaffList staff = new StaffList();
+                        staff.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error updating staff: " + ex.Message);
+                    }
+                }
+               
             }
             else
             {
@@ -286,6 +373,13 @@ namespace Tutorial09_linq_
             this.Hide();
             Login lg = new Login();
             lg.Show();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StaffList st = new StaffList();
+            st.Show();
         }
     }
 }

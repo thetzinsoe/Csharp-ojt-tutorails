@@ -88,7 +88,6 @@ namespace Tutorial09_linq_
                 newRow["Phone No2"] = item.PhoneNo2;
                 newRow["Address"] = item.Address;
                 dataTable.Rows.Add(newRow);
-
             }
         }
 
@@ -120,6 +119,30 @@ namespace Tutorial09_linq_
             DB.Tuto07s.DeleteOnSubmit(dt);
             MessageBox.Show("Delete Successful");
             loadData();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow selectedRow = dgvStaffInformation.SelectedRows[0];
+            var selectedCell = selectedRow.Cells[2].Value; // Assuming the staffName is in the second column (index 1)
+            staffName = Convert.ToString(selectedCell);
+            var dt = (from s in DB.Tuto07s
+                      where s.Name == staffName
+                      select s).First();
+            this.Hide();
+            Register re = new Register(dt);
+            re.Show();
+
+        }
+
+        private void dgvStaffInformation_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            DataGridViewImageColumn imageColumn = dgvStaffInformation.Columns["Image"] as DataGridViewImageColumn;
+            if (imageColumn != null)
+            {
+                // Set the image layout to Zoom
+                imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            }
         }
     }
 }

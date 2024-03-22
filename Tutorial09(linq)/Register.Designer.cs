@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbRegister = new System.Windows.Forms.Label();
             this.txtStaffNo = new System.Windows.Forms.TextBox();
             this.pbStaffPhoto = new System.Windows.Forms.PictureBox();
             this.btnChooseFile = new System.Windows.Forms.Button();
@@ -65,19 +65,22 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtNrcNo = new System.Windows.Forms.TextBox();
             this.errorProviderCommon = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnCancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbStaffPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderCommon)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbRegister
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(305, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 48);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Register";
+            this.lbRegister.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbRegister.AutoSize = true;
+            this.lbRegister.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbRegister.Location = new System.Drawing.Point(305, 9);
+            this.lbRegister.Name = "lbRegister";
+            this.lbRegister.Size = new System.Drawing.Size(194, 48);
+            this.lbRegister.TabIndex = 0;
+            this.lbRegister.Text = "Register";
             // 
             // txtStaffNo
             // 
@@ -367,7 +370,7 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnRegister.Location = new System.Drawing.Point(263, 506);
+            this.btnRegister.Location = new System.Drawing.Point(525, 520);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(135, 30);
             this.btnRegister.TabIndex = 30;
@@ -378,7 +381,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnClear.Location = new System.Drawing.Point(431, 506);
+            this.btnClear.Location = new System.Drawing.Point(364, 520);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(135, 30);
             this.btnClear.TabIndex = 31;
@@ -421,11 +424,23 @@
             // 
             this.errorProviderCommon.ContainerControl = this;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnCancel.Location = new System.Drawing.Point(203, 520);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(135, 30);
+            this.btnCancel.TabIndex = 35;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 562);
+            this.ClientSize = new System.Drawing.Size(800, 576);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtNrcNo);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -460,7 +475,7 @@
             this.Controls.Add(this.btnChooseFile);
             this.Controls.Add(this.pbStaffPhoto);
             this.Controls.Add(this.txtStaffNo);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbRegister);
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -473,7 +488,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbRegister;
         private System.Windows.Forms.TextBox txtStaffNo;
         private System.Windows.Forms.PictureBox pbStaffPhoto;
         private System.Windows.Forms.Button btnChooseFile;
@@ -509,6 +524,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtNrcNo;
         private System.Windows.Forms.ErrorProvider errorProviderCommon;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
 
