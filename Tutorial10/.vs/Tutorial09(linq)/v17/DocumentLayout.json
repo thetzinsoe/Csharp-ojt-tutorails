@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "C:\\Csharp-ojt-tutorails\\Tutorial10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|c:\\csharp-ojt-tutorails\\tutorial10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|c:\\csharp-ojt-tutorails\\tutorial10\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|c:\\csharp-ojt-tutorails\\tutorial10\\passwordrecovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:passwordrecovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|c:\\csharp-ojt-tutorails\\tutorial10\\passwordrecovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:passwordrecovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|c:\\csharp-ojt-tutorails\\tutorial10\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|C:\\Csharp-ojt-tutorails\\Tutorial10\\stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5678A51A-4178-40EE-85F1-0662F3836FCF}|Tutorial09(linq).csproj|solutionrelative:stafflist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,18 +49,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 244,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        },
-        {
           "DockedWidth": 414,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,21 +73,63 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PasswordRecovery.cs",
+              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\PasswordRecovery.cs",
+              "RelativeDocumentMoniker": "PasswordRecovery.cs",
+              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\PasswordRecovery.cs",
+              "RelativeToolTip": "PasswordRecovery.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAAAFwAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T09:33:06.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PasswordRecovery.cs [Design]",
+              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\PasswordRecovery.cs",
+              "RelativeDocumentMoniker": "PasswordRecovery.cs",
+              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\PasswordRecovery.cs [Design]",
+              "RelativeToolTip": "PasswordRecovery.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T09:30:30.508Z",
+              "EditorCaption": " [Design]"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T09:15:41.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Register.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Register.cs",
               "RelativeDocumentMoniker": "Register.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Register.cs",
               "RelativeToolTip": "Register.cs",
-              "ViewState": "AQIAAEMBAAAAAAAAAAAewJMBAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkBAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T03:42:59.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "StaffList.cs [Design]",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\StaffList.cs",
               "RelativeDocumentMoniker": "StaffList.cs",
@@ -97,20 +141,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAA0wCYAAAAiAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAcwDoAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T07:51:13.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
@@ -122,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "StaffList.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\StaffList.cs",
               "RelativeDocumentMoniker": "StaffList.cs",
@@ -135,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Aes.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Aes.cs",
               "RelativeDocumentMoniker": "Aes.cs",
@@ -148,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Register.cs [Design]",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial10\\Register.cs",
               "RelativeDocumentMoniker": "Register.cs",

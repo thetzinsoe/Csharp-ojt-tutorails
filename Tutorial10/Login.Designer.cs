@@ -37,6 +37,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbForgotPass = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClear
@@ -134,11 +135,26 @@
             this.label2.Text = "Not a member ? Click to Register!";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // lbForgotPass
+            // 
+            this.lbForgotPass.AutoSize = true;
+            this.lbForgotPass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbForgotPass.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbForgotPass.ForeColor = System.Drawing.Color.Red;
+            this.lbForgotPass.Location = new System.Drawing.Point(481, 306);
+            this.lbForgotPass.Name = "lbForgotPass";
+            this.lbForgotPass.Size = new System.Drawing.Size(152, 19);
+            this.lbForgotPass.TabIndex = 41;
+            this.lbForgotPass.Text = "Forgot Passwort?";
+            this.lbForgotPass.Visible = false;
+            this.lbForgotPass.Click += new System.EventHandler(this.lbForgotPass_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbForgotPass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label1);
@@ -148,6 +164,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtStaffName);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -167,5 +184,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbForgotPass;
     }
 }

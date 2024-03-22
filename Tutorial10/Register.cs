@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
+using System.Net.Mail;
 
 namespace Tutorial09_linq_
 {
@@ -281,6 +282,26 @@ namespace Tutorial09_linq_
                         DB.Tuto10s.InsertOnSubmit(st);
                         DB.SubmitChanges();
                         MessageBox.Show("Staff Adding successful");
+
+                        try
+                        {
+                            MailMessage message = new MailMessage();
+                            SmtpClient smtp = new SmtpClient();
+                            message.From = new MailAddress("youremail@gmail.com");
+                            message.To.Add(new MailAddress(txtEmail.Text));
+                            message.Subject = "Test";
+                            message.IsBodyHtml = true; //to make message body as html
+                            message.Body = "This is test mail user "+txtStaffName.Text.ToString();
+                            smtp.Port = 587;
+                            smtp.Host = "smtp.gmail.com"; //for gmail host
+                            smtp.EnableSsl = true;
+                            smtp.UseDefaultCredentials = false;
+                            smtp.Credentials = new NetworkCredential("youemail@gmail.com", "your app password");
+                            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                            smtp.Send(message);
+                        }
+                        catch (Exception) { }
+
                         clear();
                         this.Hide();
                         StaffList staff = new StaffList();
@@ -291,9 +312,6 @@ namespace Tutorial09_linq_
                     {
                         MessageBox.Show(ex.Message);
                     }
-
-
-
                 }
                 else
                 {

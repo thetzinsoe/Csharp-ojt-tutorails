@@ -15,6 +15,7 @@ namespace Tutorial09_linq_
     {
         EncryptionHelper EncryptionHelper = new EncryptionHelper();
         StaffDataDataContext DB = new StaffDataDataContext();
+        int loginCount = 0;
         public Login()
         {
             InitializeComponent();
@@ -39,24 +40,31 @@ namespace Tutorial09_linq_
             var staff = DB.Tuto10s.FirstOrDefault(s => s.Name.ToLower() == staffName);
             if (staff != null)
             {
-
                 string password = staff.Password;
                 string pass = EncryptionHelper.Decrypt(password);
                 if (txtPassword.Text.ToString() == pass)
                 {
                     this.Hide();
                     StaffList st = new StaffList();
+                    loginCount = 0;
                     st.Show();
                 }
                 else
                 {
                     MessageBox.Show("Wrong password!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    loginCount++;
+                    if (loginCount >= 5)
+                    {
+                        lbForgotPass.Visible = true;
+                        btnLogin.Enabled = false;
+                    }
                 }
 
             }
             else
             {
                 MessageBox.Show("Staff name does not exist in the database.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                loginCount = 0;
             }
         }
 
@@ -72,6 +80,13 @@ namespace Tutorial09_linq_
             {
                 login();
             }
+        }
+
+        private void lbForgotPass_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PasswordRecovery pr = new PasswordRecovery();
+            pr.Show();
         }
     }
 }

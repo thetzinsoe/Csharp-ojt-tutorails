@@ -16,7 +16,7 @@ namespace Tutorial09_linq_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StaffList());
+            Application.Run(new Login());
         }
     }
 }
