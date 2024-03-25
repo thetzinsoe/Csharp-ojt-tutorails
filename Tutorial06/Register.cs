@@ -67,7 +67,7 @@ namespace Tutorial04
             }
             else
             {
-               // MessageBox.Show("No matching records found.");
+                // MessageBox.Show("No matching records found.");
                 errorProviderRe.SetError(txtUsername, "");
             }
 
@@ -125,6 +125,11 @@ namespace Tutorial04
             txtUsername.Text = "";
             txtPassword.Text = "";
             txtConfirmPassword.Text = "";
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

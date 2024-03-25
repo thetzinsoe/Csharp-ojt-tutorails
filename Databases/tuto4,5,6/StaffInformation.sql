@@ -1,4 +1,4 @@
-USE [Tutorial04]
+USE [CsharpTuto]
 GO
 /****** Object:  Table [dbo].[StaffInformation]    Script Date: 3/18/2024 11:53:47 AM ******/
 SET ANSI_NULLS ON
@@ -13,8 +13,8 @@ CREATE TABLE [dbo].[StaffInformation](
 	[StaffType] [varchar](10) NOT NULL,
 	[NrcNo] [varchar](50) NOT NULL,
 	[Gender] [varchar](10) NULL,
-	[PhoneNo1] [int] NOT NULL,
-	[PhoneNo2] [int] NULL,
+	[PhoneNo1] [varchar](9) NOT NULL,
+	[PhoneNo2] [varchar](9) NULL,
 	[Address] [varchar](300) NULL,
 	[BirthDate] [date] NOT NULL
 ) ON [PRIMARY]

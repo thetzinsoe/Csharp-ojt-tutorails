@@ -79,7 +79,7 @@ namespace Tutorial03
             btnAdd.Text = "Update";
             btnDelete.Enabled = true;
             int staffId = 0;
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            if (e.RowIndex >= 0 )
             {
                 DataGridViewRow selectedRow = dgvStaffInformation.Rows[e.RowIndex];
                 if (selectedRow.Cells.Count > 0)
@@ -133,8 +133,8 @@ namespace Tutorial03
                                     rdOther.Checked = false;
                                     break;
                             }
-                            txtPhoneNo1.Text = reader.GetInt32(7).ToString();
-                            txtPhoneNo2.Text = reader.GetInt32(8).ToString();
+                            txtPhoneNo1.Text = reader.GetString(7);
+                            txtPhoneNo2.Text = reader.GetString(8);
                             rtxtAddress.Text = reader.GetString(9);
                         }
                     }
@@ -501,8 +501,8 @@ namespace Tutorial03
                     newRow["NRC No"] = reader.GetString(5);
                     newRow["Gender"] = reader.GetString(6);
                     newRow["Age"] = (DateTime.Today.Year - reader.GetDateTime(10).Year).ToString();
-                    newRow["Phone No1"] = reader.GetInt32(7);
-                    newRow["Phone No2"] = reader.GetInt32(8);
+                    newRow["Phone No1"] = reader.GetString(7);
+                    newRow["Phone No2"] = reader.GetString(8);
                     newRow["Address"] = reader.GetString(9);
                     staffDataTable.Rows.Add(newRow);
                     imageData = new byte[0];

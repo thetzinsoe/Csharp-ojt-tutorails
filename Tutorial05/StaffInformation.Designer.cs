@@ -120,6 +120,7 @@
             // 
             txtStaffName.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtStaffName.Location = new Point(203, 116);
+            txtStaffName.MaxLength = 25;
             txtStaffName.Name = "txtStaffName";
             txtStaffName.Size = new Size(196, 26);
             txtStaffName.TabIndex = 3;
@@ -167,6 +168,7 @@
             // 
             txtNrcNo.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNrcNo.Location = new Point(202, 356);
+            txtNrcNo.MaxLength = 20;
             txtNrcNo.Name = "txtNrcNo";
             txtNrcNo.Size = new Size(196, 26);
             txtNrcNo.TabIndex = 9;
@@ -185,6 +187,7 @@
             // 
             txtPhoneNo1.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPhoneNo1.Location = new Point(544, 112);
+            txtPhoneNo1.MaxLength = 9;
             txtPhoneNo1.Name = "txtPhoneNo1";
             txtPhoneNo1.Size = new Size(196, 26);
             txtPhoneNo1.TabIndex = 11;
@@ -223,6 +226,7 @@
             // 
             txtPhoneNo2.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPhoneNo2.Location = new Point(544, 170);
+            txtPhoneNo2.MaxLength = 9;
             txtPhoneNo2.Name = "txtPhoneNo2";
             txtPhoneNo2.Size = new Size(196, 26);
             txtPhoneNo2.TabIndex = 15;

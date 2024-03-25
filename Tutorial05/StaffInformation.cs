@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -79,7 +79,7 @@ namespace Tutorial03
             btnAdd.Text = "Update";
             btnDelete.Enabled = true;
             int staffId = 0;
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow selectedRow = dgvStaffInformation.Rows[e.RowIndex];
                 if (selectedRow.Cells.Count > 0)
@@ -114,8 +114,8 @@ namespace Tutorial03
                             dJoinDate.Value = reader.GetDateTime(3);
                             cbStaffType.Text = reader.GetString(4);
                             txtNrcNo.Text = reader.GetString(5);
-                            dBirthDate.Value = reader.GetDateTime(6);
-                            string gender = reader.GetString(10);
+                            dBirthDate.Value = reader.GetDateTime(10);
+                            string gender = reader.GetString(6);
                             switch (gender)
                             {
                                 case "Male":
@@ -133,8 +133,8 @@ namespace Tutorial03
                                     rdOther.Checked = false;
                                     break;
                             }
-                            txtPhoneNo1.Text = reader.GetInt32(7).ToString();
-                            txtPhoneNo2.Text = reader.GetInt32(8).ToString();
+                            txtPhoneNo1.Text = reader.GetString(7);
+                            txtPhoneNo2.Text = reader.GetString(8);
                             rtxtAddress.Text = reader.GetString(9);
                         }
                     }
@@ -240,7 +240,17 @@ namespace Tutorial03
                 errorProviderCommon.SetError(txtNrcNo, "");
             }
 
-            string numericPattern = @"^\d+$";
+            if (rdMale.Checked == false && rdfemale.Checked == false && rdOther.Checked == false)
+            {
+                errorProviderCommon.SetError(rdfemale, "You need to choose your gender");
+            }
+            else
+            {
+                errorProviderCommon.SetError(rdfemale, "");
+            }
+
+            string numericPattern = @"^(?:[0-9]{1,9}|[၀-၉]{1,9})$";
+
             if (Regex.IsMatch(txtPhoneNo1.Text, numericPattern) && txtPhoneNo1.Text.Length >= 5)
             {
                 errorProviderCommon.SetError(txtPhoneNo1, "");
@@ -250,6 +260,18 @@ namespace Tutorial03
                 errorProviderCommon.SetError(txtPhoneNo1, "Invalid phone number format. Please enter a numeric value.");
             }
 
+            if (txtPhoneNo2.Text.Length > 0)
+            {
+                if (Regex.IsMatch(txtPhoneNo1.Text, numericPattern) && txtPhoneNo1.Text.Length >= 5)
+                {
+                    errorProviderCommon.SetError(txtPhoneNo2, "");
+                }
+                else
+                {
+                    errorProviderCommon.SetError(txtPhoneNo2, "Invalid phone number format. Please enter a numeric value.");
+                }
+            }
+           
             bool errorsPresent = errorProviderCommon.ContainerControl.Controls
                 .OfType<Control>()
                 .Any(control => !string.IsNullOrEmpty(errorProviderCommon.GetError(control)));
@@ -257,13 +279,14 @@ namespace Tutorial03
 
             if (!errorsPresent)
             {
-                if (dgvStaffInformation.SelectedCells.Count > 0)
+                if (dgvStaffInformation.SelectedCells.Count > 0&& btnAdd.Text=="Update")
                 {
                     try
                     {
                         int staffId = 0;
-                        var firstCellValue = txtStaffNo.Text;
-                        staffId = Convert.ToInt32(firstCellValue); SqlCommand updateCommand = new SqlCommand("UPDATE StaffInformation SET Image=@Image, Name=@Name, JoinFrom=@JoinFrom, StaffType=@StaffType, NrcNo=@NrcNo, Gender=@Gender, BirthDate=@BirthDate, PhoneNo1=@PhoneNo1, PhoneNo2=@PhoneNo2, Address=@Address WHERE Id=" + staffId);
+                        var firstCellValue = txtStaffNo.Text.ToString();
+                        staffId = Convert.ToInt32(firstCellValue);
+                        SqlCommand updateCommand = new SqlCommand("UPDATE StaffInformation SET Image=@Image, Name=@Name, JoinFrom=@JoinFrom, StaffType=@StaffType, NrcNo=@NrcNo, Gender=@Gender, BirthDate=@BirthDate, PhoneNo1=@PhoneNo1, PhoneNo2=@PhoneNo2, Address=@Address WHERE Id=" + staffId);
 
                         // Bind parameters
                         updateCommand.Parameters.AddWithValue("@Image", imagePath);
@@ -396,6 +419,7 @@ namespace Tutorial03
         private string GetGender()
         {
             return rdMale.Checked ? "Male" : (rdfemale.Checked ? "Female" : (rdOther.Checked ? "Other" : ""));
+            
         }
 
         private void clickChooseFile(object sender, EventArgs e)
@@ -432,6 +456,9 @@ namespace Tutorial03
             dJoinDate.CustomFormat = "0 / 00 / 0000";
             dBirthDate.CustomFormat = "0 / 00 / 0000";
             pbStaffPhoto.Image = null;
+            btnAdd.Text = "Add";
+            btnDelete.Enabled = false;
+            dgvStaffInformation.Rows[0].Selected = false;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
