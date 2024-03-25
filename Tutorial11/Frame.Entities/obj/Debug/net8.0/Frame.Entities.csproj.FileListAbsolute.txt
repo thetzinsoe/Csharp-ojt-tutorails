@@ -1,0 +1,12 @@
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\bin\Debug\net8.0\Frame.Entities.deps.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\bin\Debug\net8.0\Frame.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\bin\Debug\net8.0\Frame.Entities.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\Frame.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\Frame.Entities.AssemblyInfoInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\Frame.Entities.AssemblyInfo.cs
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\Frame.Entities.csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\Frame.Entities.sourcelink.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\Frame.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\refint\Frame.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\Frame.Entities.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.Entities\obj\Debug\net8.0\ref\Frame.Entities.dll

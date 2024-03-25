@@ -1,0 +1,12 @@
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\bin\Debug\net8.0\Frame.ADO.deps.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\bin\Debug\net8.0\Frame.ADO.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\bin\Debug\net8.0\Frame.ADO.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\Frame.ADO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\Frame.ADO.AssemblyInfoInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\Frame.ADO.AssemblyInfo.cs
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\Frame.ADO.csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\Frame.ADO.sourcelink.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\Frame.ADO.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\refint\Frame.ADO.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\Frame.ADO.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.ADO\obj\Debug\net8.0\ref\Frame.ADO.dll

@@ -1,0 +1,17 @@
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.Form1.resources
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.csproj.GenerateResource.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.AssemblyInfoInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.AssemblyInfo.cs
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.sourcelink.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\bin\Debug\net8.0-windows\Frame.App.exe
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\bin\Debug\net8.0-windows\Frame.App.deps.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\bin\Debug\net8.0-windows\Frame.App.runtimeconfig.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\bin\Debug\net8.0-windows\Frame.App.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\bin\Debug\net8.0-windows\Frame.App.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\refint\Frame.App.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\Frame.App.genruntimeconfig.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.App\obj\Debug\net8.0-windows\ref\Frame.App.dll
