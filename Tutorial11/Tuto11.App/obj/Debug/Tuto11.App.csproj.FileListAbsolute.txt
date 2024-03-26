@@ -1,0 +1,4 @@
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.App\obj\Debug\Tuto11.App.csproj.AssemblyReference.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.App\obj\Debug\Tuto11.App.Properties.Resources.resources
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.App\obj\Debug\Tuto11.App.csproj.GenerateResource.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.App\obj\Debug\Tuto11.App.csproj.CoreCompileInputs.cache

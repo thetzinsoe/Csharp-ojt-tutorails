@@ -1,0 +1,6 @@
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\bin\Debug\Tuto11.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\bin\Debug\Tuto11.Entities.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.csproj.AssemblyReference.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.pdb

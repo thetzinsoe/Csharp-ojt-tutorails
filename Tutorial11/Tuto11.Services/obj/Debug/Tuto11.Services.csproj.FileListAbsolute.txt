@@ -1,0 +1,2 @@
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Services\obj\Debug\Tuto11.Services.csproj.AssemblyReference.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Services\obj\Debug\Tuto11.Services.csproj.CoreCompileInputs.cache

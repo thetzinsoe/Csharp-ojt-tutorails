@@ -1,0 +1,2 @@
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.csproj.AssemblyReference.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.csproj.CoreCompileInputs.cache
