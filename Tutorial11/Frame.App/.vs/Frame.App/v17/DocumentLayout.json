@@ -3,17 +3,21 @@
   "WorkspaceRootPath": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5D249AE-459B-4FF9-98C1-225D4EA0C250}|..\\Frame.Services\\Frame.Services.csproj|c:\\csharp-ojt-tutorails\\tutorial11\\frame.services\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D87793F-1126-4AB3-A0D4-D218058EC6DA}|Frame.App.csproj|c:\\csharp-ojt-tutorails\\tutorial11\\frame.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D87793F-1126-4AB3-A0D4-D218058EC6DA}|Frame.App.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D87793F-1126-4AB3-A0D4-D218058EC6DA}|Frame.App.csproj|c:\\csharp-ojt-tutorails\\tutorial11\\frame.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D87793F-1126-4AB3-A0D4-D218058EC6DA}|Frame.App.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5D249AE-459B-4FF9-98C1-225D4EA0C250}|..\\Frame.Services\\Frame.Services.csproj|c:\\csharp-ojt-tutorails\\tutorial11\\frame.services\\frame.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7AECF476-B220-4D56-BD0A-0299338CE05F}|..\\Frame.DAO\\Frame.DAO.csproj|c:\\csharp-ojt-tutorails\\tutorial11\\frame.dao\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D87793F-1126-4AB3-A0D4-D218058EC6DA}|Frame.App.csproj|c:\\csharp-ojt-tutorails\\tutorial11\\frame.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F5D249AE-459B-4FF9-98C1-225D4EA0C250}|..\\Frame.Services\\Frame.Services.csproj|c:\\csharp-ojt-tutorails\\tutorial11\\frame.services\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D87793F-1126-4AB3-A0D4-D218058EC6DA}|Frame.App.csproj|C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.App\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2D87793F-1126-4AB3-A0D4-D218058EC6DA}|Frame.App.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -24,21 +28,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Frame.Services",
-              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.Services\\Frame.Services.csproj",
-              "RelativeDocumentMoniker": "..\\Frame.Services\\Frame.Services.csproj",
-              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.Services\\Frame.Services.csproj",
-              "RelativeToolTip": "..\\Frame.Services\\Frame.Services.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-25T10:55:41.741Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -49,41 +40,66 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.App\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.App\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T03:33:15.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.DAO\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Frame.DAO\\Class1.cs",
+              "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.DAO\\Class1.cs",
+              "RelativeToolTip": "..\\Frame.DAO\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T03:32:50.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.App\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.App\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T10:25:13.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Test.cs",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.Services\\Test\\Test.cs",
               "RelativeDocumentMoniker": "..\\Frame.Services\\Test\\Test.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.Services\\Test\\Test.cs",
               "RelativeToolTip": "..\\Frame.Services\\Test\\Test.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T10:23:36.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.App\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Csharp-ojt-tutorails\\Tutorial11\\Frame.App\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T10:18:30.482Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-25T10:18:30.482Z"
             }
           ]
         },

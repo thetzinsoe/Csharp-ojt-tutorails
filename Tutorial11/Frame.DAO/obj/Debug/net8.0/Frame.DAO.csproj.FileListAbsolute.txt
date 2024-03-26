@@ -1,0 +1,12 @@
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\bin\Debug\net8.0\Frame.DAO.deps.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\bin\Debug\net8.0\Frame.DAO.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\bin\Debug\net8.0\Frame.DAO.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\Frame.DAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\Frame.DAO.AssemblyInfoInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\Frame.DAO.AssemblyInfo.cs
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\Frame.DAO.csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\Frame.DAO.sourcelink.json
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\Frame.DAO.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\refint\Frame.DAO.dll
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\Frame.DAO.pdb
+C:\Csharp-ojt-tutorails\Tutorial11\Frame.DAO\obj\Debug\net8.0\ref\Frame.DAO.dll

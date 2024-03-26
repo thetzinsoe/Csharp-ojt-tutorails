@@ -1,5 +1,4 @@
-﻿
-namespace Frame.Services.Test;
+﻿namespace Frame.Services.Test;
 
 public class Test
 {

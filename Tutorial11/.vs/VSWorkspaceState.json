@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Frame.App"
+    "\\Frame.App",
+    "\\Frame.Services",
+    "\\Frame.Services\\Test"
   ],
   "SelectedNode": "\\Frame.App\\Frame.App.sln",
   "PreviewInSolutionExplorer": false
