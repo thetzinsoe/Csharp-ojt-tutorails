@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Tuto11.App",
+    "\\Tuto11.App\\Views"
   ],
+  "SelectedNode": "\\Tuto11.App\\App.config",
   "PreviewInSolutionExplorer": false
 }

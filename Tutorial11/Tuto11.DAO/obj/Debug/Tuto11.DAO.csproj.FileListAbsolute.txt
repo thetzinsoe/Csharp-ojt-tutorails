@@ -1,2 +1,11 @@
 C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.csproj.AssemblyReference.cache
 C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.csproj.CoreCompileInputs.cache
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\bin\Debug\Tuto11.DAO.dll
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\bin\Debug\Tuto11.DAO.pdb
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\bin\Debug\Tuto11.Entities.dll
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\bin\Debug\Tuto11.Entities.pdb
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.csproj.AssemblyReference.cache
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.csproj.CoreCompileInputs.cache
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.csproj.Up2Date
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.dll
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.DAO\obj\Debug\Tuto11.DAO.pdb

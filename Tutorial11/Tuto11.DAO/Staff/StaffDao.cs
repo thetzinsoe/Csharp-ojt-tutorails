@@ -5,12 +5,15 @@ using System.Collections.Generic;
 using Entities.Staff;
 using System.Data.SqlClient;
 using System.Data.Common;
+using Entities.Staff;
+using DbConnection = DAO.Common.DbConnection;
 
 namespace DAO.Staff
 {
     /// <summary>
     /// Defines the <see cref="ProductDao" />.
     /// </summary>
+    /// 
     public class StaffDao
     {
         /// <summary>
@@ -40,7 +43,7 @@ namespace DAO.Staff
         /// </summary>
         public DataTable GetAll()
         {
-            strSql = "SELECT * FROM Employees ";
+            strSql = "SELECT * FROM Tuto07 ";
 
             return connection.ExecuteDataTable(CommandType.Text, strSql);
         }
@@ -52,8 +55,8 @@ namespace DAO.Staff
         /// <returns></returns>
         public DataTable Get(int id)
         {
-            strSql = "SELECT * FROM Employees " +
-                      "WHERE  EmployeeId= " + id;
+            strSql = "SELECT * FROM Tuto07 " +
+                      "WHERE  Id= " + id;
 
             return connection.ExecuteDataTable(CommandType.Text, strSql);
         }
@@ -62,17 +65,23 @@ namespace DAO.Staff
         /// Create Employee
         /// </summary>
         /// <param name="employeeEntity">.</param>
-        public bool Insert(EmployeeEntity employeeEntity)
+        public bool Insert(StaffEntity staffEntity)
         {
-            strSql = "INSERT INTO Employees(Name,Address,Designation,Salary,JoiningDate)" +
-                     "VALUES(@Name, @Address, @Designation, @Salary, @JoiningDate)";
+            strSql = "INSERT INTO Tuto07(Image,Name,JoinFrom,StaffType,NrcNo,Gender,PhoneNo1,PhoneNo2,Address,BirthDate,Password)" +
+                     "VALUES(@Image,@Name,@JoinFrom@,StaffType,@NrcNo,@Gender,@PhoneNo1,@PhoneNo2@,Address@,BirthDate,@Password)";
 
             SqlParameter[] sqlParam = {
-                                        new SqlParameter("@Name", employeeEntity.name),
-                                        new SqlParameter("@Address", employeeEntity.address),
-                                        new SqlParameter("@Designation", employeeEntity.designation),
-                                        new SqlParameter("@Salary", employeeEntity.salary),
-                                        new SqlParameter("@JoiningDate", employeeEntity.joiningDate)
+                                        new SqlParameter("@Image", staffEntity.image),
+                                        new SqlParameter("@Name", staffEntity.name),
+                                        new SqlParameter("@JoinFrom", staffEntity.joinDate),
+                                        new SqlParameter("@StaffType", staffEntity.staffId),
+                                        new SqlParameter("@NrcNo", staffEntity.nrcNo),
+                                        new SqlParameter("@Gender", staffEntity.gender),
+                                        new SqlParameter("@PhoneNo1", staffEntity.phoneNo1),
+                                        new SqlParameter("@PhoneNo2", staffEntity.phoneNo2),
+                                        new SqlParameter("@Address", staffEntity.address),
+                                        new SqlParameter("@BirthDate", staffEntity.birthDate),
+                                        new SqlParameter("@Password", staffEntity.password)
                                       };
             bool success = connection.ExecuteNonQuery(CommandType.Text, strSql, sqlParam);
 
@@ -83,17 +92,22 @@ namespace DAO.Staff
         /// Create Employee
         /// </summary>
         /// <param name="employeeEntity">.</param>
-        public bool Update(EmployeeEntity employeeEntity)
+        public bool Update(StaffEntity staffEntity)
         {
-            strSql = "UPDATE Employees SET Name=@Name,Address=@Address,Designation=@Designation,Salary=@Salary,JoiningDate=@JoiningDate WHERE EmployeeId = @EmployeeId";
+            strSql = "UPDATE Employees SET Image=@Image,Name=@Name,JoinFrom=@JoinFrom@,StaffType=StaffType,NrcNo=@NrcNo,Gender=@Gender,PhoneNo1=@PhoneNo1,PhoneNo2=@PhoneNo2@,Address=Address@,BirthDate=BirthDate,Password=@Password WHERE Id = @StaffId";
 
             SqlParameter[] sqlParam = {
-                                        new SqlParameter("@EmployeeId", employeeEntity.employeeId),
-                                        new SqlParameter("@Name", employeeEntity.name),
-                                        new SqlParameter("@Address", employeeEntity.address),
-                                        new SqlParameter("@Designation", employeeEntity.designation),
-                                        new SqlParameter("@Salary", employeeEntity.salary),
-                                        new SqlParameter("@JoiningDate", employeeEntity.joiningDate)
+                                        new SqlParameter("@Image", staffEntity.image),
+                                        new SqlParameter("@Name", staffEntity.name),
+                                        new SqlParameter("@JoinFrom", staffEntity.joinDate),
+                                        new SqlParameter("@StaffType", staffEntity.staffId),
+                                        new SqlParameter("@NrcNo", staffEntity.nrcNo),
+                                        new SqlParameter("@Gender", staffEntity.gender),
+                                        new SqlParameter("@PhoneNo1", staffEntity.phoneNo1),
+                                        new SqlParameter("@PhoneNo2", staffEntity.phoneNo2),
+                                        new SqlParameter("@Address", staffEntity.address),
+                                        new SqlParameter("@BirthDate", staffEntity.birthDate),
+                                        new SqlParameter("@Password", staffEntity.password)
                                       };
             bool success = connection.ExecuteNonQuery(CommandType.Text, strSql, sqlParam);
 
@@ -106,9 +120,9 @@ namespace DAO.Staff
         /// <param name="id">.</param>
         public bool Delete(int id)
         {
-            strSql = "DELETE FROM Employees  WHERE EmployeeId =@EmployeeId";
+            strSql = "DELETE FROM Employees  WHERE Id =@StaffId";
             SqlParameter[] sqlParam = {
-                                        new SqlParameter("@EmployeeId", id)
+                                        new SqlParameter("@StaffId", id)
                                       };
             bool success = connection.ExecuteNonQuery(CommandType.Text, strSql, sqlParam);
             return success;

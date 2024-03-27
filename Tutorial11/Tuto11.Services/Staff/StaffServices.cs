@@ -5,19 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using DAO.Staff;
-using Entities.Employee;
+using Entities.Staff;
 
 namespace Services.Staff
 {
     /// <summary>
     /// Defines the <see cref="ProductService" />.
     /// </summary>
-    public class EmployeeService
+    public class StaffService
     {
         /// <summary>
         /// Define product Dao..
         /// </summary>
-        private EmployeeDao employeeDao = new EmployeeDao();
+        private StaffDao staffDao = new StaffDao();
 
 
         #region==========Employee========== 
@@ -26,7 +26,7 @@ namespace Services.Staff
         /// </summary>
         public DataTable GetAll()
         {
-            DataTable dt = employeeDao.GetAll();
+            DataTable dt = staffDao.GetAll();
             return dt;
         }
         #endregion
@@ -38,7 +38,7 @@ namespace Services.Staff
         /// <returns>.</returns>
         public DataTable Get(int id)
         {
-            DataTable dt = employeeDao.Get(id);
+            DataTable dt = staffDao.Get(id);
             return dt;
         }
 
@@ -46,18 +46,18 @@ namespace Services.Staff
         /// Save Employee.
         /// </summary>
         /// <param name="employeeEntity">.</param>
-        public bool Insert(EmployeeEntity employeeEntity)
+        public bool Insert(StaffEntity employeeEntity)
         {
-            return employeeDao.Insert(employeeEntity);
+            return staffDao.Insert(employeeEntity);
         }
 
         /// <summary>
         /// Update Employee.
         /// </summary>
         /// <param name="employeeEntity">.</param>
-        public bool Update(EmployeeEntity employeeEntity)
+        public bool Update(StaffEntity employeeEntity)
         {
-            return employeeDao.Update(employeeEntity);
+            return staffDao.Update(employeeEntity);
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace Services.Staff
         /// <param name="id">.</param>
         public bool Delete(int id)
         {
-            return employeeDao.Delete(id);
+            return staffDao.Delete(id);
         }
     }
 }

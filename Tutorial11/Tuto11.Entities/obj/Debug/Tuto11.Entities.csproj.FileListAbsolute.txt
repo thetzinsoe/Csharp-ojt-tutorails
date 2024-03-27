@@ -4,3 +4,9 @@ C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.csp
 C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.csproj.CoreCompileInputs.cache
 C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.dll
 C:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.pdb
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\bin\Debug\Tuto11.Entities.dll
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\bin\Debug\Tuto11.Entities.pdb
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.csproj.AssemblyReference.cache
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.csproj.CoreCompileInputs.cache
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.dll
+E:\Csharp-ojt-tutorails\Tutorial11\Tuto11.Entities\obj\Debug\Tuto11.Entities.pdb

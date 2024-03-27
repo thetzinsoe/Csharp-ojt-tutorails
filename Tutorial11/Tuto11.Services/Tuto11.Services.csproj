@@ -41,9 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Staff\StaffServices.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tuto11.DAO\Tuto11.DAO.csproj">
+      <Project>{b909d1e8-af4d-4272-b1aa-9178dd0d1d7e}</Project>
+      <Name>Tuto11.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tuto11.Entities\Tuto11.Entities.csproj">
+      <Project>{35741290-abbf-4d57-8b17-09a3a3187fed}</Project>
+      <Name>Tuto11.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
