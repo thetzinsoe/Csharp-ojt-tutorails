@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Tuto11.App",
-    "\\Tuto11.App\\Views"
+    "\\Tuto11.App\\Views",
+    "\\Tuto11.DAO",
+    "\\Tuto11.DAO\\Staff"
   ],
-  "SelectedNode": "\\Tuto11.App\\App.config",
+  "SelectedNode": "\\Tuto11.App\\Views\\Register.cs",
   "PreviewInSolutionExplorer": false
 }

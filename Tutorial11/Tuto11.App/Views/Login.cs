@@ -16,5 +16,17 @@ namespace Tuto11.App.Views
         {
             InitializeComponent();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register re = new Register();
+            re.Show();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace Tuto11.App.Views
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaffInformation)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,6 +146,7 @@ namespace Tuto11.App.Views
             this.dgvStaffInformation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStaffInformation.Size = new System.Drawing.Size(735, 247);
             this.dgvStaffInformation.TabIndex = 48;
+            this.dgvStaffInformation.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvStaffInformation_CellFormatting);
             // 
             // button2
             // 
@@ -155,16 +157,18 @@ namespace Tuto11.App.Views
             this.button2.TabIndex = 54;
             this.button2.Text = "Add New";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(473, 42);
+            this.button4.Location = new System.Drawing.Point(651, 6);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(81, 28);
             this.button4.TabIndex = 56;
             this.button4.Text = "Log Out";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnUpdate
             // 
@@ -175,12 +179,25 @@ namespace Tuto11.App.Views
             this.btnUpdate.TabIndex = 57;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(473, 42);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(81, 28);
+            this.btnDelete.TabIndex = 58;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // StaffList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 422);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
@@ -218,5 +235,6 @@ namespace Tuto11.App.Views
         private Button button2;
         private Button button4;
         private Button btnUpdate;
+        private Button btnDelete;
     }
 }

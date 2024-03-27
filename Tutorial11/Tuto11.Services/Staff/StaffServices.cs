@@ -45,19 +45,19 @@ namespace Services.Staff
         /// <summary>
         /// Save Employee.
         /// </summary>
-        /// <param name="employeeEntity">.</param>
-        public bool Insert(StaffEntity employeeEntity)
+        /// <param name="staffEntity">.</param>
+        public bool Insert(StaffEntity staffEntity)
         {
-            return staffDao.Insert(employeeEntity);
+            return staffDao.Insert(staffEntity);
         }
 
         /// <summary>
         /// Update Employee.
         /// </summary>
-        /// <param name="employeeEntity">.</param>
-        public bool Update(StaffEntity employeeEntity)
+        /// <param name="staffEntity">.</param>
+        public bool Update(StaffEntity staffEntity)
         {
-            return staffDao.Update(employeeEntity);
+            return staffDao.Update(staffEntity);
         }
 
         /// <summary>

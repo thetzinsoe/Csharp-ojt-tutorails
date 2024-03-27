@@ -67,8 +67,8 @@ namespace DAO.Staff
         /// <param name="employeeEntity">.</param>
         public bool Insert(StaffEntity staffEntity)
         {
-            strSql = "INSERT INTO Tuto07(Image,Name,JoinFrom,StaffType,NrcNo,Gender,PhoneNo1,PhoneNo2,Address,BirthDate,Password)" +
-                     "VALUES(@Image,@Name,@JoinFrom@,StaffType,@NrcNo,@Gender,@PhoneNo1,@PhoneNo2@,Address@,BirthDate,@Password)";
+            strSql = strSql = "INSERT INTO Tuto07(Image, Name, JoinFrom, StaffType, NrcNo, Gender, PhoneNo1, PhoneNo2, Address, BirthDate, Password)" +
+          " VALUES(@Image, @Name, @JoinFrom, @StaffType, @NrcNo, @Gender, @PhoneNo1, @PhoneNo2, @Address, @BirthDate, @Password)";
 
             SqlParameter[] sqlParam = {
                                         new SqlParameter("@Image", staffEntity.image),
@@ -94,9 +94,11 @@ namespace DAO.Staff
         /// <param name="employeeEntity">.</param>
         public bool Update(StaffEntity staffEntity)
         {
-            strSql = "UPDATE Employees SET Image=@Image,Name=@Name,JoinFrom=@JoinFrom@,StaffType=StaffType,NrcNo=@NrcNo,Gender=@Gender,PhoneNo1=@PhoneNo1,PhoneNo2=@PhoneNo2@,Address=Address@,BirthDate=BirthDate,Password=@Password WHERE Id = @StaffId";
+            strSql = "UPDATE Tuto07 SET Image=@Image, Name=@Name, JoinFrom=@JoinFrom, StaffType=@StaffType, NrcNo=@NrcNo, Gender=@Gender, PhoneNo1=@PhoneNo1, PhoneNo2=@PhoneNo2, Address=@Address, BirthDate=@BirthDate, Password=@Password WHERE Id = @StaffId";
+
 
             SqlParameter[] sqlParam = {
+                                        new SqlParameter("@StaffId", staffEntity.staffId),
                                         new SqlParameter("@Image", staffEntity.image),
                                         new SqlParameter("@Name", staffEntity.name),
                                         new SqlParameter("@JoinFrom", staffEntity.joinDate),
@@ -120,7 +122,7 @@ namespace DAO.Staff
         /// <param name="id">.</param>
         public bool Delete(int id)
         {
-            strSql = "DELETE FROM Employees  WHERE Id =@StaffId";
+            strSql = "DELETE FROM Tuto07  WHERE Id =@StaffId";
             SqlParameter[] sqlParam = {
                                         new SqlParameter("@StaffId", id)
                                       };
