@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Shop.App",
+    "\\Shop.DAO",
+    "\\Shop.DAO\\Product"
+  ],
+  "SelectedNode": "\\Shop.DAO\\Product\\ProductDao.cs",
+  "PreviewInSolutionExplorer": false
+}

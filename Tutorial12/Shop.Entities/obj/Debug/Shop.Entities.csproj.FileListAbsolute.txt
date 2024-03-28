@@ -1,0 +1,6 @@
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Entities\bin\Debug\Shop.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Entities\bin\Debug\Shop.Entities.pdb
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Entities\obj\Debug\Shop.Entities.csproj.AssemblyReference.cache
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Entities\obj\Debug\Shop.Entities.csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Entities\obj\Debug\Shop.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Entities\obj\Debug\Shop.Entities.pdb

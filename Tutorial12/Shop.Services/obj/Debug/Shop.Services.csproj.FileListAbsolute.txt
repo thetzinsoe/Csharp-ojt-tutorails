@@ -1,0 +1,11 @@
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\bin\Debug\Shop.Services.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\bin\Debug\Shop.Services.pdb
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\bin\Debug\Shop.DAO.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\bin\Debug\Shop.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\bin\Debug\Shop.DAO.pdb
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\bin\Debug\Shop.Entities.pdb
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\obj\Debug\Shop.Services.csproj.AssemblyReference.cache
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\obj\Debug\Shop.Services.csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\obj\Debug\Shop.Ser.7EEE7942.Up2Date
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\obj\Debug\Shop.Services.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.Services\obj\Debug\Shop.Services.pdb

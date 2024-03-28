@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using Entities.Staff;
 using System.Data.SqlClient;
 using System.Data.Common;
-using Entities.Staff;
 using DbConnection = DAO.Common.DbConnection;
 
 namespace DAO.Staff
@@ -14,6 +13,7 @@ namespace DAO.Staff
     /// Defines the <see cref="ProductDao" />.
     /// </summary>
     /// 
+
     public class StaffDao
     {
         /// <summary>

@@ -1,0 +1,9 @@
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\bin\Debug\Shop.DAO.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\bin\Debug\Shop.DAO.pdb
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\bin\Debug\Shop.Entities.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\bin\Debug\Shop.Entities.pdb
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\obj\Debug\Shop.DAO.csproj.AssemblyReference.cache
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\obj\Debug\Shop.DAO.csproj.CoreCompileInputs.cache
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\obj\Debug\Shop.DAO.csproj.Up2Date
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\obj\Debug\Shop.DAO.dll
+C:\Csharp-ojt-tutorails\Tutorial12\Shop.DAO\obj\Debug\Shop.DAO.pdb

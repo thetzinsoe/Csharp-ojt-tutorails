@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Tutorial12",
+    "\\Tutorial12\\Shop.Second"
   ],
-  "SelectedNode": "\\Tutorial03.sln (Tutorial03\\Tutorial03.sln)",
+  "SelectedNode": "\\Tutorial12\\Shop.Test",
   "PreviewInSolutionExplorer": false
 }
